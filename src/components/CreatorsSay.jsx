@@ -1,58 +1,95 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const testimonials = [
-  { name: "Jannn Mentur", role: "Director", quote: "The ching ward as thee of hoivent you casy ous mise.", img: "https://randomuser.me/api/portraits/men/1.jpg" },
-  { name: "Setlin Cuione", role: "Designer", quote: "The lafces that if bee the has a lanters anid seot.", img: "https://randomuser.me/api/portraits/men/2.jpg" },
-  { name: "Notim Srrotor", role: "Dev", quote: "I hidin wort as or amd no ourt of mith plone.", img: "https://randomuser.me/api/portraits/women/3.jpg" },
-  { name: "Alex Rivar", role: "Manager", quote: "Amazing tool for scaling global communication.", img: "https://randomuser.me/api/portraits/men/4.jpg" },
-  { name: "Sarah Kon", role: "Creator", quote: "The AI voice cloning is absolutely mind-blowing.", img: "https://randomuser.me/api/portraits/women/5.jpg" },
-  { name: "Mike Ross", role: "CEO", quote: "Language barriers are finally gone with LingoSetu.", img: "https://randomuser.me/api/portraits/men/6.jpg" },
-  { name: "Elena G.", role: "Influencer", quote: "Translation speed is faster than anything else.", img: "https://randomuser.me/api/portraits/women/7.jpg" },
-  { name: "David Wu", role: "Producer", quote: "The best video translator in the market today.", img: "https://randomuser.me/api/portraits/men/8.jpg" }
+const stats = [
+  { value: "24+", label: "Years In AI & Engineering" },
+  { value: "50+", label: "AI Models Deployed" },
+  { value: "30+", label: "Enterprise AI Use Cases" },
+  { value: "99.9%", label: "AI System Uptime" },
+  { value: "100%", label: "Secure Data Ownership" },
+];
+
+const brands = [
+  { name: "DECATHLON", color: "text-green" },
+  { name: "CARS 24", color: "text-blue-800 italic" },
+  { name: "HT", color: "text-[#e11d48]" },
+  { name: "Panasonic", color: "text-[#0057b7]" },
+  { name: "motherson", color: "text-red" },
+  { name: "PayU", color: "text-[#89c440]" }
 ];
 
 export default function CreatorsSay() {
   return (
-    <section className="bg-black pb-20 pt-4 px-6 font-sans">
+    <section className="bg-white  pb-20 pt-4 px-6 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* CREATORS SAY HEADING */}
-        <div className="mb-12 text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter">
-            CREATORS <span className="text-white">SAY</span>
-          </h2>
-          <div className="w-32 h-1.5 bg-[#0BF487] mt-3 mx-auto md:mx-0 shadow-[0_0_15px_#0BF487]" />
-        </div>
-
-        {/* TESTIMONIAL CARDS GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"> {/* Margin-bottom added for spacing */}
-          {testimonials.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -8 }}
-              className="relative group bg-[#0A0A0A] p-6 rounded-2xl border-2 border-[#0BF487]/20 hover:border-[#0BF487] transition-all duration-300 shadow-xl"
-            >
-              <div className="flex justify-center mb-5">
-                <div className="w-20 h-20 rounded-full border-2 border-[#0BF487]/30 group-hover:border-[#0BF487] p-1 transition-all">
-                  <img 
-                    src={item.img} 
-                    alt={item.name} 
-                    className="w-full h-full rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-              </div>
-              <div className="text-center">
-                <p className="text-white text-sm italic mb-6 leading-relaxed">“{item.quote}”</p>
-                <h4 className="text-[#0BF487] font-black text-sm uppercase">{item.name}</h4>
-                <p className="text-gray-500 text-[10px] font-bold uppercase mt-1">{item.role}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* WORLD MAP IMAGE - AB YAHAN HAI AAPKI IMAGE */}
+        
        
+
+        {/* --- SECTION 2: TRUSTED BRANDS (Clean Image 2 Style) --- */}
+        <div className="text-center mb-16">
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-black text-lg md:text-xl font-medium mb-12 tracking-wide"
+          >
+            Trusted and used by teams around the globe
+          </motion.h3>
+          
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 lg:gap-24 px-4">
+            {brands.map((brand, idx) => (
+              <motion.span
+                key={idx}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 0.6 }}
+                whileHover={{ opacity: 1, scale: 1.1 }}
+                className={`${brand.color} font-black text-xl md:text-xl tracking-tighter cursor-default transition-all duration-300`}
+              >
+                {brand.name}
+              </motion.span>
+            ))}
+          </div>
+        </div>
+
+        {/* --- SECTION 3: STATS BANNER (3D Dark Glass Style) --- */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="relative mt-24 p-[1px] bg-gradient-to-r from-white/0 via-white/20 to-white/0 rounded-[2.5rem]"
+        >
+          {/* Main Container */}
+<div className=" bg-blue-900 py-20 px-6 md:px-10 border-4 border-double border-orange-500 shadow-2xl">
+  
+  <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+
+    {stats.map((stat, idx) => (
+      <div
+        key={idx}
+        className="flex flex-col items-center justify-center py-6"
+      >
+        <motion.h4
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: idx * 0.15 }}
+          className="text-3xl md:text-5xl font-extrabold text-white mb-2"
+        >
+          {stat.value}
+        </motion.h4>
+
+        <p className="text-xs md:text-sm text-white uppercase font-semibold tracking-widest">
+          {stat.label}
+        </p>
+      </div>
+    ))}
+
+  </div>
+
+</div>
+
+          {/* Bottom Glow Effect */}
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-20 bg-[#0BF487]/5 blur-[100px] pointer-events-none" />
+        </motion.div>
+
       </div>
     </section>
   );

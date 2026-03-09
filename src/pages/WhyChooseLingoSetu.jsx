@@ -1,77 +1,76 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// Aapki local image
-import menImg from '../assets/men.png'; 
 
-export default function WhyChooseLingoSetu() {
-  const points = [
-    { title: "FREE CHAT & DISCOVERY" },
-    { title: "1-ON-1 VIDEO CALLING" },
-    { title: "GROUP TEAM MEETINGS" },
-    { title: "FREELANCER SOLUTIONS" },
-    { title: "END-TO-END SECURITY" },
-    { title: "24/7 NODE SUPPORT" }
-  ];
+// --- IMAGES IMPORT ---
+import bgImage from '../assets/pus1.jpg';
+import officeImg from '../assets/office_photo.webp'; // Aapki nayi office photo
 
+export default function AboutSection() {
   return (
-    // FULL SCREEN - NO SCROLL
-    <section className="h-screen w-full bg-black flex items-center justify-center overflow-hidden px-10">
-      
-      <div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
-        {/* --- LEFT SIDE: IMAGE (Exact Gativyaa Style) --- */}
-        <div className="flex justify-center">
-          <motion.img 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            src={menImg} 
-            alt="LingoSetu Model" 
-            // Image size and shadow matched to reference
-            className="w-full max-w-[550px] h-auto object-contain drop-shadow-2xl"
-          />
+    <section
+      className="relative min-h-screen w-full flex items-center justify-center bg-white overflow-hidden"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundBlendMode: 'overlay'
+      }}
+    >
+      {/* Professional Light Overlay */}
+      <div className="absolute inset-0 bg-white/70 z-0" />
+
+      <div className="max-w-[1350px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 px-6 md:px-12">
+
+        {/* --- LEFT SIDE: TEXT CONTENT --- */}
+        <div className="flex flex-col order-2 lg:order-1">
+
+          <div className="flex flex-col mb-6">
+            <h3 className="text-black text-2xl md:text-3xl font-bold tracking-tight mb-2">
+              Know More About Us
+            </h3>
+            <div className="w-20 h-[4px] bg-blue-800" /> {/* Bold Red Line */}
+          </div>
+
+
+
+          <div className="space-y-6 max-w-xl">
+            <p className="text-black text-lg leading-relaxed font-semibold">
+              At Grav Web Solution Pvt Ltd our mission is to empower businesses with innovative digital marketing solutions that drive growth and success. We are committed to delivering tailored services in social media marketing, performance marketing, website design, lead generation, and email marketing, ensuring our clients achieve their goals in an ever-evolving digital landscape.
+            </p>
+
+          </div>
+
+          <div className="mt-6">
+            <button className="bg-blue-800 hover:bg-black text-white font-black px-12 py-4 rounded-sm text-[11px] uppercase tracking-[0.2em] transition-all shadow-2xl">
+              Learn More
+            </button>
+          </div>
         </div>
 
-        {/* --- RIGHT SIDE: CONTENT (Perfectly Aligned) --- */}
-        <div className="flex flex-col">
-          {/* Main Heading - All Caps, Bold, Italic */}
-          <h1 className="text-white text-5xl md:text-6xl font-[900] uppercase italic leading-[0.9] tracking-tighter">
-            WHY CHOOSE <br />
-            <span className="text-[#0BF487]">LINGOSETU?</span>
-          </h1>
-          
-          {/* Short description */}
-          <p className="text-zinc-500 text-sm mt-8 leading-relaxed max-w-xxl font-medium">
-            LingoSetu delivers faster, safer, and more accurate professional discovery using advanced 3D networking and live AI-driven node mapping.
-          </p>
+        {/* --- RIGHT SIDE: OFFICE PHOTO --- */}
+        <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, x: 30 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative p-3 bg-white shadow-[0_30px_60px_rgba(0,0,0,0.15)] border border-zinc-200 group"
+          >
+            {/* The Office Image */}
+            <img
+              src={officeImg}
+              alt="iB Arts Office"
+              className="w-full max-w-[600px] h-auto object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+            />
 
-          {/* --- POINTS GRID (2 Columns - Same as Gativyaa) --- */}
-          <div className="grid grid-cols-2 gap-x-12 gap-y-6 mt-12">
-            {points.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 group">
-                {/* Minimalist Green Checkmark */}
-                <div className="w-12 h-12 rounded-full border border-[#0BF487] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-7 h-7 text-[#0BF487]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <h4 className="text-white text-[16px]  group-hover:text-[#0BF487] transition-colors">
-                  {item.title}
-                </h4>
-              </div>
-            ))}
-          </div>
-
-          {/* Action Buttons */}
-          <div className="mt-14 flex gap-6">
-             <button className="bg-[#0BF487] text-black font-black px-10 py-3.5 r text-[10px] uppercase tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#0BF487]/20">
-               Join Now
-             </button>
-             
-          </div>
+            {/* Decorative Corner Box like Image 1aa67d */}
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-blue-800/30 -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-red-700/30 -z-10" />
+          </motion.div>
         </div>
 
       </div>
+
+
     </section>
   );
 }

@@ -1,103 +1,137 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle, Phone } from 'lucide-react'; // Contact icons ke liye
-
-// Aapki local assets
-import MenAvatar from '../assets/men.png';
-import WomenAvatar from '../assets/mengirls.png';
+import { MessageCircle, Phone, CheckCircle2, Star } from 'lucide-react';
+import userProfileImg from '../assets/puspendra.png';
 
 const testimonials = [
-  { name: "Aarav", text: "LingoSetu made language learning so easy. The HD calls are super clear!", stars: 5, img: MenAvatar, contact: "+91 98765XXXXX" },
-  { name: "Sofia R.", text: "Met amazing experts from around the world. Totally hooked to the progress tracker.", stars: 5, img: WomenAvatar, contact: "+91 88223XXXXX" },
-  { name: "Karan", text: "This app feels alive! Every lesson is exciting and the UI is just beautiful.", stars: 5, img: MenAvatar, contact: "+91 70012XXXXX" },
-  { name: "Priya M.", text: "The best platform for mastering new languages quickly and efficiently.", stars: 5, img: WomenAvatar, contact: "+91 99334XXXXX" },
-  { name: "John D.", text: "Highly professional mentors and end-to-end secure communication. 10/10!", stars: 5, img: MenAvatar, contact: "+91 81122XXXXX" },
-  { name: "Elena", text: "I love how I can track my progress real-time. Best choice for students!", stars: 5, img: WomenAvatar, contact: "+91 77665XXXXX" },
-  { name: "Rahul S.", text: "Smooth interface and very helpful community support. Recommended!", stars: 5, img: MenAvatar, contact: "+91 90001XXXXX" },
-  { name: "Sana K.", text: "LingoSetu is my daily go-to app for language practice. Amazing experience.", stars: 5, img: WomenAvatar, contact: "+91 82233XXXXX" }
+  { 
+    name: "Aarav", 
+    text: "LingoSetu made language learning so easy. The HD calls are super clear and the interface is incredibly smooth! I have never experienced such seamless interaction with tutors before. It truly feels like a global classroom right in my pocket.", 
+    stars: 5, 
+    img: userProfileImg, 
+    contact: "+91 98765 43210", 
+    status: "Active Student" 
+  },
+  { 
+    name: "Sofia R.", 
+    text: "Met amazing experts from around the world. Totally hooked to the progress tracker and real-time feedback system. It helped me overcome my speaking anxiety within just a few weeks of consistent practice and expert guidance.", 
+    stars: 5, 
+    img: userProfileImg,  
+    contact: "+91 88223 99102", 
+    status: "Pro Member"
+  },
+  { 
+    name: "Karan", 
+    text: "This app feels alive! Every lesson is exciting and the UI is just beautiful. Best learning experience so far. The community is very supportive and the native speakers provide insights that you just can't find in any textbook.", 
+    stars: 5, 
+    img: userProfileImg,  
+    contact: "+91 70012 55430", 
+    status: "Verified User"
+  },
+  { 
+    name: "Priya M.", 
+    text: "The best platform for mastering new languages quickly and efficiently. Highly recommended for professionals who travel. The flexibility of scheduling calls at any time fits perfectly with my busy work-life balance and goals.", 
+    stars: 5, 
+    img: userProfileImg,  
+    contact: "+91 99334 11200", 
+    status: "Early Bird"
+  }
 ];
 
 const TestimonialCard = ({ item }) => (
-  <div className="flex-shrink-0 w-[350px] md:w-[420px] bg-[#0F0F0F] border-2 border-white/5 p-8 rounded-[30px] mx-6 shadow-2xl transition-all duration-500 group hover:border-[#0BF487] hover:shadow-[0_0_30px_rgba(11,244,135,0.2)] cursor-pointer">
-    
+  <div className="flex-shrink-0 w-[300px] md:w-[350px] bg-white border border-blue-800 p-8 rounded-[10px] mx-4 shadow-2xl transition-all duration-500 group hover:border-blue-600 cursor-pointer">
     <div className="flex justify-between items-start mb-6">
       <div className="flex items-center gap-5">
-        {/* Avatar with Hover Effect */}
-        <img 
-          src={item.img} 
-          alt={item.name} 
-          className="w-14 h-14 rounded-full object-cover border-2 border-white/10 group-hover:border-[#0BF487] transition-colors duration-500" 
-        />
-        <div>
-          <h4 className="text-white font-black text-lg tracking-tight uppercase italic group-hover:text-[#0BF487] transition-colors">{item.name}</h4>
-          <div className="flex text-[#0BF487] text-xs gap-1 mt-1">
-            {"★".repeat(item.stars)}
+        <div className="relative">
+          <img src={item.img} alt={item.name} className="w-16 h-16 border-2  group-hover:border-blue-600 transition-all" />
+          {/* Tick Icon background changed to blue-800 */}
+          <div className="absolute -bottom-2 -right-2 bg-blue-800 text-white rounded-full p-1 shadow-lg">
+            <CheckCircle2 size={14} strokeWidth={3} />
           </div>
         </div>
+        <div>
+          <h4 className="text-blue-800 font-black text-xl tracking-tight uppercase italic group-hover:text-blue-600 transition-colors">{item.name}</h4>
+          <span className="text-[10px] text-zinc-500 font-bold uppercase tracking-[0.2em]">{item.status}</span>
+        </div>
       </div>
-      
-      {/* Contact Icon */}
-      <div className="bg-white/5 p-3 rounded-full group-hover:bg-[#0BF487] transition-all duration-500">
-        <MessageCircle size={18} className="text-zinc-500 group-hover:text-black" />
+      {/* Message Icon changed to blue-800 */}
+      <div className="bg-blue-50 p-3 rounded-xl group-hover:bg-blue-800 transition-all duration-500">
+        <MessageCircle size={20} className="text-blue-800 group-hover:text-white" />
       </div>
     </div>
     
-    <p className="text-zinc-400 text-sm md:text-base italic leading-relaxed font-medium group-hover:text-zinc-200 transition-colors">
-      "{item.text}"
-    </p>
+    <div className="min-h-[90px]">
+        <p className="text-black text-[17px] italic leading-relaxed font-medium group-hover:text-zinc-700 transition-colors">
+          "{item.text}"
+        </p>
+    </div>
 
-    {/* Contact Detail & Verification */}
-    <div className="mt-8 pt-6 border-t border-white/5 flex justify-between items-center group-hover:border-[#0BF487]/20">
-        <div className="flex items-center gap-2">
-            <Phone size={12} className="text-[#0BF487]" />
-            <span className="text-zinc-500 text-[11px] font-bold group-hover:text-white transition-colors">
-                {item.contact}
+    <div className="mt-8 pt-6 border-t border-zinc-100 flex justify-between items-center group-hover:border-blue-800/20">
+        <div className="flex flex-col gap-1">
+            <span className="text-zinc-600 text-[9px] font-black uppercase tracking-widest">Contact Verified</span>
+            <div className="flex items-center gap-2">
+                <Phone size={12} className="text-blue-800" />
+                <span className="text-black text-sm font-bold tracking-wider">{item.contact}</span>
+            </div>
+        </div>
+        <div className="flex flex-col items-end">
+            {/* Stars changed to blue-800 */}
+            <div className="flex text-[#FFD700] gap-0.5 mb-1">
+                {[...Array(item.stars)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
+            </div>
+            {/* Badge changed to blue-800 theme */}
+            <span className="text-blue-800 text-[10px] font-black tracking-tighter  px-3 py-1">
+                Identity Confirmed
             </span>
         </div>
-        <span className="text-[#0BF487] text-[10px] font-black uppercase tracking-widest bg-[#0BF487]/10 px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            Verified
-        </span>
     </div>
   </div>
 );
 
 const UserTestimonials = () => {
+  const tripleTestimonials = [...testimonials, ...testimonials, ...testimonials];
+
   return (
-    <section className="bg-black py-24 overflow-hidden border-t border-white/5">
-      <div className="text-center mb-20">
-      <h2 className="text-white text-2xl md:text-7xl font-[50] uppercase italic tracking-tighter leading-none flex flex-wrap gap-3 justify-center text-center">
-  <span>The Global Word</span>
-  <span className="text-[#0BF487] drop-shadow-[0_0_20px_rgba(11,244,135,0.3)]">
-    on the Street
-  </span>
-</h2>
+    <section className="bg-white pt-0 pb-20 overflow-hidden">
+      
+      {/* --- HEADING SECTION: Pure Blue Theme --- */}
+      <div className="max-w-7xl mx-auto px-6 mb-10 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          className="flex flex-col items-center"
+        >
+          <h2 className="text-black text-3xl md:text-5xl font-black italic tracking-tighter leading-tight">
+            Our <span className="text-blue-800">Reviews</span>
+          </h2>
 
-
+          {/* Sateek Blue Line */}
+          <div className="w-16 h-1 bg-blue-800 mt-3" />
+        </motion.div>
       </div>
 
-      <div className="flex flex-col gap-12">
-        {/* ROW 1: LEFT TO RIGHT */}
-        <div className="flex overflow-hidden">
+      {/* --- SLIDERS: Seamless Scrolling --- */}
+      <div className="flex flex-col gap-6">
+        <div className="flex relative overflow-hidden">
           <motion.div 
-            animate={{ x: [0, -2000] }}
-            transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-            className="flex hover:[animation-play-state:paused]"
+            className="flex"
+            animate={{ x: ["0%", "-33.33%"] }} 
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
           >
-            {[...testimonials, ...testimonials].map((item, idx) => (
-              <TestimonialCard key={idx} item={item} />
+            {tripleTestimonials.map((item, idx) => (
+              <TestimonialCard key={`row1-${idx}`} item={item} />
             ))}
           </motion.div>
         </div>
 
-        {/* ROW 2: RIGHT TO LEFT */}
-        <div className="flex overflow-hidden">
+        <div className="flex relative overflow-hidden">
           <motion.div 
-            animate={{ x: [-2000, 0] }}
-            transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-            className="flex hover:[animation-play-state:paused]"
+            className="flex"
+            animate={{ x: ["-33.33%", "0%"] }}
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
           >
-            {[...testimonials, ...testimonials].map((item, idx) => (
-              <TestimonialCard key={idx} item={item} />
+            {tripleTestimonials.map((item, idx) => (
+              <TestimonialCard key={`row2-${idx}`} item={item} />
             ))}
           </motion.div>
         </div>

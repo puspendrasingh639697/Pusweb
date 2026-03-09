@@ -14,8 +14,12 @@ import UserTestimonials from '../components/UserTestimonials';
 import FAQSection from '../hooks/FAQSection';
 import ContactFooter from '../components/ContactFooter';
 import FeaturesSection from './FeaturesSection';
+import HeroSection from './HeroSection';
+import ServicesSection from './LingoSetuLanding';
+import Footer from './Footer';
 // import WhoDashboard3D from '../utils/Dashboard';
 // import LingoSetuFinalUI from './LingoSetuFinalUI';
+
 
 
 
@@ -23,20 +27,26 @@ function HomepageFileAll() {
   return (
     <main className="bg-black w-full min-h-screen">
       <LingoSetuPro />
+      <HeroSection/>
       <CreatorsSay />
-      <GlobalReach/>
       <Global/>
-      <ActiveCommunity/>
+      {/* <ActiveCommunity/> */}
       <ConnectionSection/>
       <LiveDiscovery/>
-      <ContactSection/>
-      <BenefitsSection/>
-      <WhyChooseLingoSetu/>
-      <LingoSetuLanding/>
+      {/* <ContactSection/> */}
+      {/* <BenefitsSection/> */}
+      
+      <GlobalReach/>
+
+      <ServicesSection/>
+      
       <UserTestimonials/>
+      <WhyChooseLingoSetu/>
+      <ContactFooter/>
       <FAQSection/>
-      {/* <ContactFooter/> */}
+      
       <FeaturesSection/>
+      <Footer/>
       {/* <LingoSetuFinalUI/> */}
       {/* <WhoDashboard3D/> */}
       

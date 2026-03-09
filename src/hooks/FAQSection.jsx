@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, PhoneCall, HelpCircle } from 'lucide-react';
+import { Plus } from 'lucide-react';
+// import pusImage from "../assets/Pus.png";
 
 const faqs = [
   {
@@ -29,23 +30,22 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mb-4 w-full max-w-4xl mx-auto px-4">
+    <div className="mb-4 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full flex items-center justify-between p-6 bg-[#0F0F0F] border-2 transition-all duration-300 rounded-[25px] ${
-          isOpen ? 'border-[#0BF487] shadow-[0_0_25px_rgba(11,244,135,0.15)]' : 'border-white/5 hover:border-white/10'
+        className={`w-full flex items-center justify-between p-5 transition-all duration-300 rounded-xl border-b border-zinc-100 bg-white ${
+          isOpen ? 'shadow-md' : 'hover:bg-zinc-50'
         }`}
       >
-        <span className={` md:text-xl  italic tracking-tight text-left ${isOpen ? 'text-[#0BF487]' : 'text-white'}`}>
+        <span className={`text-lg  tracking-tight text-left ${isOpen ? 'text-blue-900' : 'text-blue-900'}`}>
           {question}
         </span>
-        {/* Icons hamesha green rahenge */}
-        <ChevronDown 
-          className={`transition-transform duration-300 text-[#0BF487] ${isOpen ? 'rotate-180' : ''}`} 
-          size={24}
-        />
+
+        <div className={`p-1 rounded-full transition-all duration-300 ${isOpen ? 'bg-blue-800 text-white rotate-45' : 'bg-blue-800 text-blue-900'}`}>
+          <Plus size={20} className="text-white" />
+        </div>
       </button>
-      
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -54,7 +54,7 @@ const FAQItem = ({ question, answer }) => {
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden"
           >
-            <div className="p-8 text-zinc-400 text-sm md:text-lg leading-relaxed italic bg-black/60 rounded-b-[25px] mt-[-15px] border-x-2 border-b-2 border-[#0BF487]/20 shadow-inner">
+            <div className="p-6 text-black text-base leading-relaxed bg-zinc-50/50 rounded-b-xl border-x border-b border-zinc-100">
               {answer}
             </div>
           </motion.div>
@@ -66,36 +66,51 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQSection = () => {
   return (
-    <section className="bg-black py-32 px-6 relative overflow-hidden">
-      {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0BF487]/5 blur-[120px] rounded-full -z-10"></div>
-
-      <div className="text-center mb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          
-          <h2 className="text-white text-3xl md:text-8xl font-[1000] uppercase italic tracking-tighter mb-6 leading-none">
-            FREQUENTLY ASKED <br /> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0BF487] to-white/50">
-              QUESTIONS
-            </span>
-          </h2>
-        </motion.div>
-        
+   <section className="bg-[#fcfcfc] pt-24 pb-40 px-6 relative overflow-hidden">
       
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+        
+        {/* LEFT SIDE */}
+        <div className="lg:w-1/2 space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="text-blue-900  text-xl">
+              Reason to Choose Us
+            </span>
+
+            <h2 className="text-black text-3xl md:text-5xl font-black  mt-4 mb-8  uppercase">
+              Client Focused Solutions : <br />
+              <span className="text-blue-900">
+                The Reasons Behind Our Success
+              </span>
+            </h2>
+
+            <p className="text-black text-lg leading-relaxed max-w-xl italic font-medium relative z-10">
+  Accelerate innovation with world-class tech teams. We'll match you
+  to an entire remote team of incredible freelance talent for all
+  your software development needs.
+</p>
+          </motion.div>
+        </div>
+
+        {/* RIGHT SIDE FAQ */}
+        <div className="lg:w-1/2 w-full">
+          <div className="flex flex-col space-y-1">
+            {faqs.map((faq, index) => (
+              <FAQItem key={index} {...faq} />
+            ))}
+          </div>
+        </div>
+
       </div>
 
-      <div className="flex flex-col items-center space-y-2">
-        {faqs.map((faq, index) => (
-          <FAQItem key={index} {...faq} />
-        ))}
-      </div>
+      {/* Bottom Overlap Image */}
+   
 
-     
-    </section>
+</section>
   );
 };
 

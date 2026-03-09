@@ -1,71 +1,89 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import MapImage from '../assets/Map.png'; 
+import React from "react";
+import { motion } from "framer-motion";
 
-export default function GlobalReach() {
-  const stats = [
-    { label: "Active Countries", value: "120+" },
-    { label: "Total Users", value: "1M+" },
-    { label: "Daily Translations", value: "500K+" }
+export default function Services() {
+
+  const services = [
+    {
+      id: 1,
+      title: "Website Development",
+      desc: "Our services are designed to help you create a stunning, user-friendly website that reflects your brand."
+    },
+    {
+      id: 2,
+      title: "Social Media Marketing",
+      desc: "Strategizing creative campaigns to discover and engage with your target audience."
+    },
+    {
+      id: 3,
+      title: "Search Engine Optimization",
+      desc: "With our in-depth research and proven result oriented strategies."
+    },
+    {
+      id: 4,
+      title: "Lead Generation",
+      desc: "Helping businesses generate high quality leads for better conversions."
+    },
+    {
+      id: 5,
+      title: "Branding & Designing",
+      desc: "Creative branding solutions to build a strong and memorable brand."
+    },
+    {
+      id: 6,
+      title: "Video Production",
+      desc: "Professional video production services to elevate your brand."
+    }
   ];
 
   return (
-    <section className="relative bg-black py-20 overflow-hidden flex flex-col items-center">
-      
-      {/* 1. HEADING - TOP CENTER */}
-      <div className="relative z-20 text-center mb-4">
-        <motion.h2 
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter"
-        >
-          A GLOBAL <span className="text-[#0BF487]">NETWORK</span>
-        </motion.h2>
-        {/* Chhoti decorative line heading ke niche */}
-        <div className="w-24 h-1 bg-[#0BF487] mx-auto mt-4 shadow-[0_0_15px_#0BF487]" />
+    <div className="bg-white  mx-auto px-6 py-20">
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        {services.map((service, i) => (
+
+          <motion.div
+            key={i}
+            whileHover={{ y: -12 }}
+            transition={{ duration: 0.3 }}
+            className="relative p-10 flex flex-col items-center justify-center rounded-xl 
+bg-white text-black border border-gray-100 shadow-xl
+hover:bg-[#0a1f5c] hover:text-white hover:border-[#0a1f5c]
+hover:shadow-[0_20px_60px_rgba(10,31,92,0.4)]
+transition-all duration-300 group"
+          >
+
+            {/* Icon Box */}
+            <div className="w-20 h-20 mb-8 rounded-2xl flex items-center justify-center 
+bg-gray-50 group-hover:bg-white/10 transition-all duration-300">
+
+              <div className="w-12 h-12 border-2 border-dashed border-gray-400 
+rounded-md opacity-40 group-hover:border-white group-hover:opacity-70"/>
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold mb-4 text-blue-800 group-hover:text-white transition">
+               {service.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-sm text-black group-hover:text-white/80 mb-8 text-center transition">
+              {service.desc}
+            </p>
+
+            {/* Button */}
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="border-2 border-white/50 px-6 py-2 rounded-full text-white text-xs font-bold tracking-widest hover:bg-white hover:text-[#0a1f5c] transition cursor-pointer">
+                LEARN MORE →
+              </div>
+            </div>
+
+          </motion.div>
+
+        ))}
+
       </div>
-
-      {/* 2. MAP AREA - CENTER */}
-      <div className="relative w-full max-w-5xl flex justify-center items-center px-4 -mt-10">
-        {/* Glow behind map */}
-        <div className="absolute w-[400px] h-[400px] bg-[#0BF487] opacity-10 blur-[120px] pointer-events-none" />
-
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="relative z-10 w-full"
-        >
-          <img 
-            src={MapImage} 
-            alt="Global Reach Map" 
-            className="w-full h-auto object-contain"
-          />
-        </motion.div>
-      </div>
-
-      {/* 3. STATS - BOTTOM CENTER */}
-      <div className="relative z-20 w-full max-w-4xl px-6 mt-10">
-        <div className="flex flex-row items-center justify-around gap-4 md:gap-16">
-          {stats.map((s, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2 }}
-              className="text-center"
-            >
-              <p className="text-[#0BF487] text-2xl md:text-4xl font-black mb-1">{s.value}</p>
-              <p className="text-gray-500 text-[9px] md:text-[11px] uppercase font-bold tracking-[0.2em] whitespace-nowrap">
-                {s.label}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Background Decor */}
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#0BF487]/30 to-transparent" />
-    </section>
+    </div>
   );
 }
