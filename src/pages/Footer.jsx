@@ -11,7 +11,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo.png";
 import pusImage from "../assets/Pus.png";
 
 const Footer = () => {

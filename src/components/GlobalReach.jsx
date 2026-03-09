@@ -79,8 +79,8 @@ export default function GlobalReach() {
             </div>
 
             {/* ORANGE SCROLL BAR */}
-            <div className="w-full bg-[#db240f] overflow-hidden py-6 mt-10">
-                <div className="flex gap-20 whitespace-nowrap animate-marquee text-white font-black text-2xl px-10">
+            <div className="w-full bg-blue-900 overflow-hidden py-6">
+                <div className="flex gap-20 whitespace-nowrap animate-marquee text-white  text-xl px-10">
                     <span>BRANDING</span>
                     <span>AGENCY</span>
                     <span>TYPOGRAPHY</span>

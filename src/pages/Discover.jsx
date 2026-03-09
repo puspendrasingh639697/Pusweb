@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Phone, Mail } from 'lucide-react'; 
-import logo from '../assets/Logo.png';
+import logo from '../assets/logo.png';
 
 export default function LingoSetuHeader() {
   const navigate = useNavigate();
