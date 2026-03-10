@@ -55,10 +55,10 @@ export default function CreatorsSay() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative mt-24 p-[1px] bg-gradient-to-r from-white/0 via-white/20 to-white/0 rounded-[2.5rem]"
+          className="relative mt-24 p-[1px] bg-gradient-to-r from-white/0 via-white/20 to-white/0 rounded-[1.5rem]"
         >
           {/* Main Container */}
-<div className=" bg-blue-900 py-20 px-6 md:px-10 border-4 border-double border-orange-500 shadow-2xl">
+<div className=" bg-blue-900 py-20 px-6 md:px-10   shadow-4xl">
   
   <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
 
@@ -71,7 +71,7 @@ export default function CreatorsSay() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: idx * 0.15 }}
-          className="text-3xl md:text-5xl font-extrabold text-white mb-2"
+          className="text-3xl md:text-5xl  text-white mb-2"
         >
           {stat.value}
         </motion.h4>
