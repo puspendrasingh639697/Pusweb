@@ -7,7 +7,7 @@ import bgImage from '../assets/slide3.webp'; // Background image placeholder
 
 export default function  HeroSection() {
   return (
-    <section className="relative min-h-screen bg-white  overflow-hidden pt-24 lg:pt-32 pb-16 px-6 md:px-20">
+    <section className="  relative min-h-screen bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  overflow-hidden pt-24 lg:pt-32 pb-16 px-6 md:px-20">
       {/* Background Overlay */}
       <div className="absolute inset-0  pointer-events-none">
          <img src={bgImage} alt="background" className="w-full h-full object-cover" />
@@ -64,7 +64,7 @@ export default function  HeroSection() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-[#f8a548] rounded-xl overflow-hidden shadow-2xl max-w-md mx-end lg:ml-auto"
+          className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] rounded-xl n shadow-2xl max-w-md mx-end lg:ml-auto"
         >
           {/* Form Header (Orange Section) */}
           <div className="   p-12 text-center text-white relative">
