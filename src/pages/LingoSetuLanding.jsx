@@ -69,15 +69,15 @@ const ServicesSection = () => {
               <div
                 key={service.id}
                 onClick={() => setActiveService(service)}
-                className="group flex justify-between items-center py-6 px-4 cursor-pointer border-b border-blue-800 transition-all"
+                className="group flex justify-between items-center py-6 px-4 cursor-pointer border-b border-green-900 transition-all"
               >
                 <span className={`text-[17px] font-bold tracking-tight transition-colors duration-300
-                  ${activeService.id === service.id ? 'text-blue-800' : 'text-blue-800'}`}>
+                  ${activeService.id === service.id ? 'bg-black  bg-clip-text text-transparent' : 'bg-black  bg-clip-text text-transparent'}`}>
                   {service.title}
                 </span>
 
                 <span className={`text-xl transition-all duration-300
-                  ${activeService.id === service.id ? 'text-blue-800 translate-x-0' : 'text-blue-800 translate-x-[-10px] opacity-0 group-hover:opacity-100 group-hover:translate-x-0'}`}>
+                  ${activeService.id === service.id ? 'text-[#f8a548] translate-x-0' : 'text-[#f8a548] translate-x-[-10px] opacity-0 group-hover:opacity-100 group-hover:translate-x-0'}`}>
                   →
                 </span>
               </div>
@@ -97,7 +97,7 @@ const ServicesSection = () => {
               className="bg-white rounded-[10px] p-12 md:p-20 shadow-[0_10px_50px_rgba(0,0,0,0.04)] border border-zinc-100 min-h-[550px] flex flex-col justify-center"
             >
               {/* Title Style from image_366d39 */}
-              <h2 className={`text-blue-800 font-black  mb-10 
+              <h2 className={`text-[#f8a548] font-black  mb-10 
                 ${activeService.id === 'vue' ? 'text-2xl text-center' : 'text-3xl text-left'}`}>
                 {activeService.heading}
               </h2>

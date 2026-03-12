@@ -42,8 +42,8 @@ export default function GlobalReach() {
 
             {/* TITLE */}
             <div className="text-center">
-                <h4 className="text-3xl font-bold pt-10 text-blue-900 uppercase">OUR TEAM</h4>
-                <h2 className="text-4xl mt-3 text-black font-semibold">
+                <h4 className="text-3xl font-bold pt-10 text-[#f8a548] uppercase">OUR TEAM</h4>
+                <h2 className="text-4xl mt-3 bg-black bg-clip-text text-transparent font-semibold">
                     Meet The Brains Behind Our Creative Solutions
                 </h2>
             </div>
@@ -69,7 +69,7 @@ export default function GlobalReach() {
                                 />
                             </div>
 
-                            <div className="p-5 text-center bg-blue-900 rounded-b-xl">
+                            <div className="p-5 text-center bg-[#f8a548] rounded-b-xl">
                                 <h3 className="font-bold text-lg text-white">{emp.name}</h3>
                                 <p className="text-blue-200 text-sm">{emp.role}</p>
                             </div>
@@ -79,7 +79,7 @@ export default function GlobalReach() {
             </div>
 
             {/* ORANGE SCROLL BAR */}
-            <div className="w-full bg-blue-900 overflow-hidden py-6">
+            <div className="w-full bg-[#f8a548]  overflow-hidden py-6">
                 <div className="flex gap-20 whitespace-nowrap animate-marquee text-white  text-xl px-10">
                     <span>BRANDING</span>
                     <span>AGENCY</span>

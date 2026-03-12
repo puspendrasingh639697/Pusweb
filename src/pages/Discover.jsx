@@ -11,7 +11,7 @@ export default function LingoSetuHeader() {
     <header className="w-full font-poppins"> 
       
       {/* --- TOP CONTACT BAR --- */}
-      <div className="bg-blue-900 text-white py-2 px-6 md:px-20 flex justify-between items-center text-xs md:text-sm border-b border-white/5">
+      <div className="bg-[#f8a548]  text-white py-2 px-6 md:px-20 flex justify-between items-center text-xs md:text-sm border-b border-white/5">
         <div className="flex items-center gap-6">
           <a href="tel:+919717580410" className="flex items-center gap-2  transition-colors font-medium">
             <Phone size={14} className="text-white" />
@@ -26,7 +26,7 @@ export default function LingoSetuHeader() {
         </div>
       </div>
 
-     <nav className="bg-white/95 backdrop-blur-md h-[90px] px-6 md:px-20 flex items-center shadow-sm sticky top-0 z-50">
+     <nav className="bg-white h-[90px] px-6 md:px-20 flex items-center shadow-sm sticky top-0 z-50">
         
   {/* LEFT SIDE */}
   <div className="flex items-center gap-4 md:gap-8">
@@ -42,9 +42,7 @@ export default function LingoSetuHeader() {
         />
       </div>
 
-      <span className="text-[14px] font-bold text-gray-800 tracking-tight">
-        Puspendra
-      </span>
+      
 
     </div>
 
@@ -59,7 +57,7 @@ export default function LingoSetuHeader() {
   <div className="ml-auto flex items-center gap-4">
     <button 
       onClick={() => navigate('/Login')}
-      className="bg-blue-900 text-white px-8 py-2.5 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-black transition-all"
+      className="bg-[#f8a548] text-white px-8 py-2.5 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-black transition-all"
     >
       Login
     </button>

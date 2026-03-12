@@ -33,16 +33,16 @@ const FAQItem = ({ question, answer }) => {
     <div className="mb-4 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full flex items-center justify-between p-5 transition-all duration-300 rounded-xl border-b border-zinc-100 bg-white ${
+        className={`w-full flex items-center justify-between p-5 transition-all duration-300 rounded-xl border-b border-zinc-100 bg-[#f8a548] ${
           isOpen ? 'shadow-md' : 'hover:bg-zinc-50'
         }`}
       >
-        <span className={`text-lg  tracking-tight text-left ${isOpen ? 'text-blue-900' : 'text-blue-900'}`}>
+        <span className={`text-lg  tracking-tight text-left ${isOpen ? 'text-white' : 'text-black'}`}>
           {question}
         </span>
 
-        <div className={`p-1 rounded-full transition-all duration-300 ${isOpen ? 'bg-blue-800 text-white rotate-45' : 'bg-blue-800 text-blue-900'}`}>
-          <Plus size={20} className="text-white" />
+        <div className={`p-1 rounded-full transition-all duration-300 ${isOpen ? 'bg-blue-800 text-white rotate-45' : 'bg-white text-blue-900'}`}>
+          <Plus size={20} className="text-[#f8a548]" />
         </div>
       </button>
 
@@ -77,13 +77,13 @@ const FAQSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-blue-900  text-xl">
+            <span className="text-[#f8a548]  text-xl">
               Reason to Choose Us
             </span>
 
-            <h2 className="text-black text-3xl md:text-5xl font-black  mt-4 mb-8  uppercase">
+            <h2 className="bg-black bg-clip-text text-transparent text-3xl md:text-5xl font-black  mt-4 mb-8  uppercase">
               Client Focused Solutions : <br />
-              <span className="text-blue-900">
+              <span className="text-[#f8a548]">
                 The Reasons Behind Our Success
               </span>
             </h2>

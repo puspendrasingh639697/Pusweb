@@ -25,10 +25,10 @@ export default function AboutSection() {
         <div className="flex flex-col order-2 lg:order-1">
 
           <div className="flex flex-col mb-6">
-            <h3 className="text-black text-2xl md:text-3xl font-bold tracking-tight mb-2">
+            <h3 className="bg-[#f8a548] bg-clip-text text-transparent text-2xl md:text-3xl font-bold tracking-tight mb-2">
               Know More About Us
             </h3>
-            <div className="w-20 h-[4px] bg-blue-800" /> {/* Bold Red Line */}
+            <div className="w-20 h-[4px] bg-[#f8a548]" /> {/* Bold Red Line */}
           </div>
 
 
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </div>
 
           <div className="mt-6">
-            <button className="bg-blue-800 hover:bg-black text-white font-black px-12 py-4 rounded-sm text-[11px] uppercase tracking-[0.2em] transition-all shadow-2xl">
+            <button className="bg-[#f8a548] hover:bg-black text-white font-black px-12 py-4 rounded-sm text-[11px] uppercase tracking-[0.2em] transition-all shadow-2xl">
               Learn More
             </button>
           </div>
@@ -53,7 +53,7 @@ export default function AboutSection() {
             initial={{ opacity: 0, scale: 0.9, x: 30 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative p-3 bg-white shadow-[0_30px_60px_rgba(0,0,0,0.15)] border border-zinc-200 group"
+            className="relative p-3 bg-white shadow-[0_30px_60px_rgba(0,0,0,0.15)] border border-[#f8a548] group"
           >
             {/* The Office Image */}
             <img
@@ -63,8 +63,8 @@ export default function AboutSection() {
             />
 
             {/* Decorative Corner Box like Image 1aa67d */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-blue-800/30 -z-10" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-red-700/30 -z-10" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4  border-[#f8a548] -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4  border-[#f8a548] -z-10" />
           </motion.div>
         </div>
 

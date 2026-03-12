@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import pushImg from '../assets/push.png';
 
 const stats = [
   { value: "24+", label: "Years In AI & Engineering" },
@@ -20,17 +21,15 @@ const brands = [
 
 export default function CreatorsSay() {
   return (
-    <section className="bg-white  pb-20 pt-4 px-6 font-sans overflow-hidden">
+    <section className="bg-white pb-28 pt-4 px-6 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        
-       
 
-        {/* --- SECTION 2: TRUSTED BRANDS (Clean Image 2 Style) --- */}
+        {/* Trusted Brands */}
         <div className="text-center mb-16">
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-black text-lg md:text-xl font-medium mb-12 tracking-wide"
+            className="bg-black bg-clip-text text-transparent text-lg md:text-xl font-medium mb-12 tracking-wide"
           >
             Trusted and used by teams around the globe
           </motion.h3>
@@ -50,44 +49,44 @@ export default function CreatorsSay() {
           </div>
         </div>
 
-        {/* --- SECTION 3: STATS BANNER (3D Dark Glass Style) --- */}
+        {/* Stats Banner */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative mt-24 p-[1px] bg-gradient-to-r from-white/0 via-white/20 to-white/0 rounded-[1.5rem]"
+          className="relative mt-24 p-[1px] bg-[#f8a548] rounded-[1.5rem]"
         >
+
           {/* Main Container */}
-<div className=" bg-blue-900 py-20 px-6 md:px-10   shadow-4xl">
-  
-  <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+          <div className="bg-[#f8a548] py-20 px-6 md:px-10 rounded-[1.5rem] shadow-4xl">
+            
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+              {stats.map((stat, idx) => (
+                <div key={idx} className="flex flex-col items-center justify-center py-6">
+                  
+                  <motion.h4
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.15 }}
+                    className="text-3xl md:text-5xl text-white mb-2"
+                  >
+                    {stat.value}
+                  </motion.h4>
 
-    {stats.map((stat, idx) => (
-      <div
-        key={idx}
-        className="flex flex-col items-center justify-center py-6"
-      >
-        <motion.h4
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: idx * 0.15 }}
-          className="text-3xl md:text-5xl  text-white mb-2"
-        >
-          {stat.value}
-        </motion.h4>
+                  <p className="text-xs md:text-sm text-white uppercase font-semibold tracking-widest">
+                    {stat.label}
+                  </p>
 
-        <p className="text-xs md:text-sm text-white uppercase font-semibold tracking-widest">
-          {stat.label}
-        </p>
-      </div>
-    ))}
+                </div>
+              ))}
+            </div>
 
-  </div>
+          </div>
 
-</div>
 
-          {/* Bottom Glow Effect */}
+          {/* Glow */}
           <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-20 bg-[#0BF487]/5 blur-[100px] pointer-events-none" />
+
         </motion.div>
 
       </div>

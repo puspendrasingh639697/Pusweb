@@ -41,7 +41,7 @@ export default function  HeroSection() {
   ].map((text, i) => (
     <div 
       key={i} 
-      className="group flex items-center gap-4 bg-blue-900 border border-white/10 p-4 rounded-lg 
+      className="group flex items-center gap-4 bg-[#f8a548] border border-white/10 p-4 rounded-lg 
                  hover:border-white transition-all duration-300 h-fit"
     >
       {/* Small Circular Checkbox */}
@@ -64,10 +64,10 @@ export default function  HeroSection() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-white rounded-xl overflow-hidden shadow-2xl max-w-md mx-end lg:ml-auto"
+          className="bg-[#f8a548] rounded-xl overflow-hidden shadow-2xl max-w-md mx-end lg:ml-auto"
         >
           {/* Form Header (Orange Section) */}
-          <div className="bg-blue-900 p-12 text-center text-white relative">
+          <div className="   p-12 text-center text-white relative">
             <div className="flex justify-center -space-x-2 mb-3">
               <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden" />
               <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden" />
@@ -95,7 +95,7 @@ export default function  HeroSection() {
             </div>
             <textarea placeholder="Message*" rows="3" className="w-full border-b border-blue-900  py-2 outline-none focus:border-[#f15a24] text-sm text-black resize-none" />
             
-            <button className="w-full bg-blue-900 hover:bg-[#d44d1d] text-white font-bold py-4 rounded-sm flex items-center justify-center gap-2 transition-all group mt-4">
+            <button className="w-full bg-[#f8a548] hover:bg-[#d44d1d] text-white font-bold py-4 rounded-sm flex items-center justify-center gap-2 transition-all group mt-4">
               Submit <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </form>

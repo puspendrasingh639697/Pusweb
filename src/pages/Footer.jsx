@@ -18,18 +18,14 @@ const Footer = () => {
   return (
     <footer className="relative bg-white min-h-[50vh] flex flex-col justify-between px-6 md:px-16 lg:px-20 pt-10 overflow-hidden">
 
-      {/* Wave Background */}
-      <div className="absolute bottom-0 left-0 w-full h-[35%] pointer-events-none z-0">
-        <img
-          src={pusImage}
-          alt="footer wave"
-          className="w-full h-full object-cover"
-          style={{
-            filter:
-              "brightness(0) saturate(100%) invert(17%) sepia(83%) saturate(1200%) hue-rotate(210deg) brightness(85%) contrast(95%)"
-          }}
-        />
-      </div>
+     <div className="absolute bottom-0 left-0 w-full h-[35%] pointer-events-none z-0">
+  <img
+    src={pusImage}
+    alt="footer wave"
+    className="w-full h-full object-cover grayscale brightness-0"
+    style={{ filter: "sepia(1) saturate(5) hue-rotate(330deg)" }}
+  />
+</div>
 
       {/* Footer Content */}
       <div className="max-w-[1300px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10 w-full">
@@ -59,7 +55,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="w-9 h-9 flex items-center justify-center bg-blue-900 text-white hover:bg-black transition"
+                  className="w-9 h-9 flex items-center justify-center bg-[#f8a548]  text-white hover:bg-black transition"
                 >
                   <Icon size={14} />
                 </a>
@@ -71,53 +67,54 @@ const Footer = () => {
 
         {/* Top Links */}
         <div>
-          <h3 className="font-bold text-lg text-blue-900 mb-4">
+          <h3 className="font-bold text-lg bg-[#f8a548] bg-clip-text text-transparent
+ mb-4">
             Top Links
           </h3>
 
           <ul className="space-y-2 text-sm text-black font-semibold">
-            <li><Link to="/about" className="hover:text-blue-900">About Us</Link></li>
-            <li><Link to="/team" className="hover:text-blue-900">Our Team</Link></li>
-            <li><Link to="/portfolio" className="hover:text-blue-900">Portfolio</Link></li>
-            <li><Link to="/career" className="hover:text-blue-900">Career</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-900">Contact Us</Link></li>
+            <li><Link to="/about" className="hover:text-[#f8a548]">About Us</Link></li>
+            <li><Link to="/team" className="hover:text-[#f8a548]">Our Team</Link></li>
+            <li><Link to="/portfolio" className="hover:text-[#f8a548]">Portfolio</Link></li>
+            <li><Link to="/career" className="hover:text-[#f8a548]">Career</Link></li>
+            <li><Link to="/contact" className="hover:text-[#f8a548]">Contact Us</Link></li>
           </ul>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="font-bold text-lg text-blue-900 mb-4">
+          <h3 className="font-bold text-lg bg-[#f8a548]  bg-clip-text text-transparent mb-4">
             Our Services
           </h3>
 
-          <ul className="space-y-2 text-sm text-black font-semibold">
-            <li><Link to="/web-development" className="hover:text-blue-900">Web Development</Link></li>
-            <li><Link to="/app-development" className="hover:text-blue-900">Mobile App Development</Link></li>
-            <li><Link to="/ui-ux" className="hover:text-blue-900">UI/UX Design</Link></li>
-            <li><Link to="/cloud" className="hover:text-blue-900">Cloud Solutions</Link></li>
+          <ul className="space-y-2 text-sm text-black  font-semibold">
+            <li><Link to="/web-development" className="hover:text-[#f8a548]">Web Development</Link></li>
+            <li><Link to="/app-development" className="hover:text-[#f8a548]">Mobile App Development</Link></li>
+            <li><Link to="/ui-ux" className="hover:text-[#f8a548]">UI/UX Design</Link></li>
+            <li><Link to="/cloud" className="hover:text-[#f8a548]">Cloud Solutions</Link></li>
           </ul>
         </div>
 
         {/* Information */}
         <div>
-          <h3 className="font-bold text-lg text-blue-900 mb-4">
+          <h3 className="font-bold text-lg  bg-[#f8a548]  bg-clip-text text-transparent mb-4">
             Information
           </h3>
 
           <div className="space-y-3 text-sm font-semibold text-black">
 
             <div className="flex gap-3">
-              <FaMapMarkerAlt className="text-blue-900" />
+              <FaMapMarkerAlt className="text-[#f8a548]" />
               <p>Moradabad Noida, Uttar Pradesh</p>
             </div>
 
             <div className="flex gap-3">
-              <FaPhoneAlt className="text-blue-900" />
+              <FaPhoneAlt className="text-[#f8a548]" />
               <p>+91 9192939495</p>
             </div>
 
             <div className="flex gap-3">
-              <FaEnvelope className="text-blue-900" />
+              <FaEnvelope className="text-[#f8a548]" />
               <div>
                 <p>info@lingosetu.com</p>
                 <p>support@lingosetu.com</p>

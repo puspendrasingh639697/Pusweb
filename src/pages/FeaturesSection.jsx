@@ -10,7 +10,7 @@ const FeaturesSection = () => {
     <div className="w-full h-screen flex flex-col font-sans overflow-hidden bg-black">
       
       {/* --- TOP SECTION (Orange Banner - Exact 50% Height) --- */}
-      <section className="bg-[#FF6633] h-1/2 relative flex items-center overflow-hidden">
+      <section className=" bg-[#f8a548] h-1/2 relative flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-20 w-full grid grid-cols-1 md:grid-cols-2 items-center h-full">
           
           {/* Left Content - Mobile centered, Desktop left */}
@@ -27,7 +27,7 @@ const FeaturesSection = () => {
               Get a clear estimate of effort, timeline, and ROI before committing resources.
             </p>
             
-            <button className="bg-blue-900 text-white text-xs md:text-base font-semibold py-2 px-6 md:py-3 md:px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300">
+            <button className="bg-white text-[#f8a548] text-xs md:text-base font-semibold py-2 px-6 md:py-3 md:px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300">
               Get AI Cost & ROI Estimate
             </button>
           </motion.div>
@@ -49,7 +49,7 @@ const FeaturesSection = () => {
       </section>
 
       {/* --- BOTTOM SECTION (Blue/Black Process - Exact 50% Height) --- */}
-      <section className="bg-blue-900 h-1/2 flex flex-col justify-center items-center text-center px-4 relative">
+      <section className="bg-black h-1/2 flex flex-col justify-center items-center text-center px-4 relative">
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ const FeaturesSection = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
                 transition={{ duration: 1.5, ease: "easeInOut" }}
-                className="h-full bg-[#FF6633]"
+                className="h-full bg-[#030802] bg-[#f8a548]"
               />
           </div>
 

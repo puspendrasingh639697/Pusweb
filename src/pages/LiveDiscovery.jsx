@@ -33,8 +33,8 @@ export default function PyramidGrid() {
           <div 
             className={`absolute inset-0 transition-all duration-500 border-2 
               ${item.isFeatured 
-                ? 'bg-blue-800 border-blue-900' // Featured card blue rahega
-                : 'bg-white border-zinc-50 group-hover:bg-blue-800 group-hover:border-blue-800'
+                ? 'bg-[#f8a548]' // Featured card blue rahega
+                : 'bg-white border-zinc-50 group-hover:bg-[#f8a548] group-hover:border-bg-[#f8a548]'
               }`}
             style={{ 
                 clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" 
@@ -43,13 +43,13 @@ export default function PyramidGrid() {
 
           {/* CONTENT */}
           <div className="relative z-10 flex flex-col items-center text-center px-10 transition-colors duration-300">
-            <div className={`mb-3 transition-colors ${item.isFeatured ? 'text-[#0BF487]' : 'text-blue-800 group-hover:text-white'}`}>
+            <div className={`mb-3 transition-colors ${item.isFeatured ? 'text-[#0BF487]' : 'text-[#f8a548] group-hover:text-white'}`}>
               {item.icon}
             </div>
-            <h4 className={`text-[18px] font-bold mb-1 ${item.isFeatured ? 'text-white' : 'text-blue-900 group-hover:text-white'}`}>
+            <h4 className={`text-[18px] font-bold mb-1 ${item.isFeatured ? 'text-white' : 'bg-black bg-clip-text text-transparent group-hover:text-white'}`}>
               {item.title}
             </h4>
-            <p className={`text-[15px] leading-tight ${item.isFeatured ? 'text-blue-100' : 'text-black group-hover:text-blue-100'}`}>
+            <p className={`text-[15px] leading-tight ${item.isFeatured ? 'text-blue-100' : 'text-black group-hover:text-white'}`}>
               {item.desc}
             </p>
           </div>

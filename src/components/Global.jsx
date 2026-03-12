@@ -49,7 +49,7 @@ export default function Services() {
             transition={{ duration: 0.3 }}
             className="relative p-10 flex flex-col items-center justify-center rounded-xl 
 bg-white text-black border border-gray-100 shadow-xl
-hover:bg-[#0a1f5c] hover:text-white hover:border-[#0a1f5c]
+hover:bg-[#f8a548] hover:text-white hover:border-[#034A1F]
 hover:shadow-[0_20px_60px_rgba(10,31,92,0.4)]
 transition-all duration-300 group"
           >
@@ -63,7 +63,7 @@ rounded-md opacity-40 group-hover:border-white group-hover:opacity-70"/>
             </div>
 
             {/* Title */}
-            <h3 className="text-xl font-bold mb-4 text-blue-800 group-hover:text-white transition">
+            <h3 className="text-xl font-bold mb-4 bg-black bg-clip-text text-transparent group-hover:text-white transition">
                {service.title}
             </h3>
 
