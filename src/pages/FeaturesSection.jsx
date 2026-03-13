@@ -10,7 +10,7 @@ const FeaturesSection = () => {
     <div className="w-full h-screen flex flex-col font-sans overflow-hidden bg-black">
       
       {/* --- TOP SECTION (Orange Banner - Exact 50% Height) --- */}
-      <section className=" bg-[#f8a548] h-1/2 relative flex items-center overflow-hidden">
+      <section className=" bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  h-1/2 relative flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-20 w-full grid grid-cols-1 md:grid-cols-2 items-center h-full">
           
           {/* Left Content - Mobile centered, Desktop left */}

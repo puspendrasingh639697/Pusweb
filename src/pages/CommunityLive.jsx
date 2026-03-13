@@ -19,12 +19,14 @@ export default function ConnectionSection() {
             <div className="space-y-4">
               <h2 className="text-5xl md:text-7xl font-black leading-tight text-black">
                 Welcome to the <br /> New Way of <br />
-                <span className="text-[#f8a548]">Connection</span>
+                <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent">Connection</span>
               </h2>
 
               <p className="text-black text-lg max-w-md">
                 Join the global community. 
-                <span className="text-[#f8a548] font-bold"> LingoSetu</span> 
+                <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent font-bold"> LingoSetu</span> 
                 is where the world talks in real-time.
               </p>
             </div>

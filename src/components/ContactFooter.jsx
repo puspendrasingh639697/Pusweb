@@ -45,10 +45,10 @@ const ContactFooter = () => {
           </h2>
           
           <div className="absolute right-0 flex gap-4">
-            <button className="swiper-prev-custom mt-10 bg-[#f8a548] p-4 rounded-full text-white hover:bg-blue-700 transition-all shadow-lg">
+            <button className="swiper-prev-custom mt-10 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] p-4 rounded-full text-white hover:bg-blue-700 transition-all shadow-lg">
               <ArrowLeft size={22} />
             </button>
-            <button className="swiper-next-custom mt-10 bg-[#f8a548] p-4 rounded-full text-white hover:bg-blue-700 transition-all shadow-lg">
+            <button className="swiper-next-custom mt-10 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] p-4 rounded-full text-white hover:bg-blue-700 transition-all shadow-lg">
               <ArrowRight size={22} />
             </button>
           </div>
@@ -77,11 +77,11 @@ const ContactFooter = () => {
               <div className="flex flex-col group h-full">
                 <h4 className="bg-black bg-clip-text text-transparent font-bold text-xl mb-5 px-2">{item.role}</h4>
                 
-                <div className="relative p-10 rounded-3xl bg-[#f8a548] min-h-[220px] flex items-center shadow-xl">
+                <div className="relative p-10 rounded-3xl bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] min-h-[220px] flex items-center shadow-xl">
                   <p className="text-white italic text-lg leading-relaxed font-medium">
                     "{item.text}"
                   </p>
-                  <div className="absolute -bottom-3 left-12 w-8 h-8 bg-[#f8a548] transform rotate-45"></div>
+                  <div className="absolute -bottom-3 left-12 w-8 h-8 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] transform rotate-45"></div>
                 </div>
 
                 <div className="flex justify-between items-center mt-10 px-4">
@@ -112,7 +112,7 @@ const ContactFooter = () => {
     alt="left visual"
     className="w-full object-contain"
   />
-  <div className="absolute inset-0 bg-[#f8a548] mix-blend-color"></div>
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] mix-blend-color"></div>
 </div>
 
 {/* Right Image */}
@@ -122,7 +122,7 @@ const ContactFooter = () => {
     alt="right visual"
     className="w-full object-contain scale-x-[-1]"
   />
-  <div className="absolute inset-0 bg-[#f8a548] mix-blend-color"></div>
+  <div className="absolute inset-0  bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] mix-blend-color"></div>
 </div>
     </footer>
   );

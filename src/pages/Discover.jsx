@@ -11,7 +11,7 @@ export default function LingoSetuHeader() {
     <header className="w-full font-poppins"> 
       
       {/* --- TOP CONTACT BAR --- */}
-      <div className="bg-[#f8a548]  text-white py-2 px-6 md:px-20 flex justify-between items-center text-xs md:text-sm border-b border-white/5">
+      <div className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  text-white py-2 px-6 md:px-20 flex justify-between items-center text-xs md:text-sm border-b border-white/5">
         <div className="flex items-center gap-6">
           <a href="tel:+919717580410" className="flex items-center gap-2  transition-colors font-medium">
             <Phone size={14} className="text-white" />
@@ -57,7 +57,7 @@ export default function LingoSetuHeader() {
   <div className="ml-auto flex items-center gap-4">
     <button 
       onClick={() => navigate('/Login')}
-      className="bg-[#f8a548] text-white px-8 py-2.5 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-black transition-all"
+      className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  text-white px-8 py-2.5 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-black transition-all"
     >
       Login
     </button>

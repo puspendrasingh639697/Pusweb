@@ -33,8 +33,8 @@ export default function PyramidGrid() {
           <div 
             className={`absolute inset-0 transition-all duration-500 border-2 
               ${item.isFeatured 
-                ? 'bg-[#f8a548]' // Featured card blue rahega
-                : 'bg-white border-zinc-50 group-hover:bg-[#f8a548] group-hover:border-bg-[#f8a548]'
+                ? 'bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]' // Featured card blue rahega
+                : 'bg-white border-zinc-50 group-hover:bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] group-hover:border-bg-[#f8a548]'
               }`}
             style={{ 
                 clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" 

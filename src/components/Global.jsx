@@ -49,7 +49,7 @@ export default function Services() {
             transition={{ duration: 0.3 }}
             className="relative p-10 flex flex-col items-center justify-center rounded-xl 
 bg-white text-black border border-gray-100 shadow-xl
-hover:bg-[#f8a548] hover:text-white hover:border-[#034A1F]
+hover:bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
 hover:shadow-[0_20px_60px_rgba(10,31,92,0.4)]
 transition-all duration-300 group"
           >

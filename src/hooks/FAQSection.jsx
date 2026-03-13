@@ -33,11 +33,11 @@ const FAQItem = ({ question, answer }) => {
     <div className="mb-4 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full flex items-center justify-between p-5 transition-all duration-300 rounded-xl border-b border-zinc-100 bg-[#f8a548] ${
+        className={`w-full flex items-center justify-between p-5 transition-all duration-300 rounded-xl border-b border-zinc-100 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] ${
           isOpen ? 'shadow-md' : 'hover:bg-zinc-50'
         }`}
       >
-        <span className={`text-lg  tracking-tight text-left ${isOpen ? 'text-white' : 'text-black'}`}>
+        <span className={`text-lg  tracking-tight text-left ${isOpen ? 'text-white' : 'text-white'}`}>
           {question}
         </span>
 
@@ -89,9 +89,7 @@ const FAQSection = () => {
             </h2>
 
             <p className="text-black text-lg leading-relaxed max-w-xl italic font-medium relative z-10">
-  Accelerate innovation with world-class tech teams. We'll match you
-  to an entire remote team of incredible freelance talent for all
-  your software development needs.
+ Innovate your marketing with SG Media. Our skilled digital marketing professionals deliver creative strategies, targeted campaigns, and real business growth
 </p>
           </motion.div>
         </div>

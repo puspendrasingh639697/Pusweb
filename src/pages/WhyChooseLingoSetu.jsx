@@ -25,7 +25,8 @@ export default function AboutSection() {
         <div className="flex flex-col order-2 lg:order-1">
 
           <div className="flex flex-col mb-6">
-            <h3 className="bg-[#f8a548] bg-clip-text text-transparent text-2xl md:text-3xl font-bold tracking-tight mb-2">
+            <h3 className="  bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent text-2xl md:text-3xl font-bold tracking-tight mb-2">
               Know More About Us
             </h3>
             <div className="w-20 h-[4px] bg-[#f8a548]" /> {/* Bold Red Line */}
@@ -41,7 +42,7 @@ export default function AboutSection() {
           </div>
 
           <div className="mt-6">
-            <button className="bg-[#f8a548] hover:bg-black text-white font-black px-12 py-4 rounded-sm text-[11px] uppercase tracking-[0.2em] transition-all shadow-2xl">
+            <button className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-black text-white font-black px-12 py-4 rounded-sm text-[11px] uppercase tracking-[0.2em] transition-all shadow-2xl">
               Learn More
             </button>
           </div>

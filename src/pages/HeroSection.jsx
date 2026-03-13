@@ -7,7 +7,7 @@ import bgImage from '../assets/slide3.webp'; // Background image placeholder
 
 export default function  HeroSection() {
   return (
-    <section className="  relative min-h-screen bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  overflow-hidden pt-24 lg:pt-32 pb-16 px-6 md:px-20">
+    <section className="  relative min-h-screen  overflow-hidden pt-24 lg:pt-32 pb-16 px-6 md:px-20">
       {/* Background Overlay */}
       <div className="absolute inset-0  pointer-events-none">
          <img src={bgImage} alt="background" className="w-full h-full object-cover" />
@@ -22,26 +22,25 @@ export default function  HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             className="text-4xl md:text-6xl font-extrabold leading-tight"
           >
-            Custom AI Development <br /> 
-            <span className="">Solutions Built for Business</span>
+           <p>Next-Gen Digital Marketing
+Enhanced with AI Technology</p>
           </motion.h1>
 
           <p className="text-white text-lg max-w-lg">
-            We deliver AI to your business through secure, custom-built solutions that 
-            drive operational efficiency and real business ROI.
+            We help businesses grow online through strategic digital marketing and SEO solutions designed to increase traffic, leads, and measurable ROI
           </p>
 
           {/* Feature Grid */}
          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
   {[
-    "AI automation and intelligent systems",
-    "CRM, ERP, and ecommerce AI integrations",
+    "Data-Driven Marketing and Smart Campaigns",
+    "Welcome to the New Way ofConnection",
     "AI agents for decision support and workflows",
     "Custom AI-powered apps and platforms"
   ].map((text, i) => (
     <div 
       key={i} 
-      className="group flex items-center gap-4 bg-[#f8a548] border border-white/10 p-4 rounded-lg 
+      className="group flex items-center gap-4 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] border border-white/10 p-4 rounded-lg 
                  hover:border-white transition-all duration-300 h-fit"
     >
       {/* Small Circular Checkbox */}
@@ -95,7 +94,7 @@ export default function  HeroSection() {
             </div>
             <textarea placeholder="Message*" rows="3" className="w-full border-b border-blue-900  py-2 outline-none focus:border-[#f15a24] text-sm text-black resize-none" />
             
-            <button className="w-full bg-[#f8a548] hover:bg-[#d44d1d] text-white font-bold py-4 rounded-sm flex items-center justify-center gap-2 transition-all group mt-4">
+            <button className="w-full bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-[#d44d1d] text-white font-bold py-4 rounded-sm flex items-center justify-center gap-2 transition-all group mt-4">
               Submit <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </form>

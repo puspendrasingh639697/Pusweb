@@ -69,7 +69,7 @@ export default function GlobalReach() {
                                 />
                             </div>
 
-                            <div className="p-5 text-center bg-[#f8a548] rounded-b-xl">
+                            <div className="p-5 text-center bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] rounded-b-xl">
                                 <h3 className="font-bold text-lg text-white">{emp.name}</h3>
                                 <p className="text-blue-200 text-sm">{emp.role}</p>
                             </div>
@@ -79,7 +79,7 @@ export default function GlobalReach() {
             </div>
 
             {/* ORANGE SCROLL BAR */}
-            <div className="w-full bg-[#f8a548]  overflow-hidden py-6">
+            <div className="w-full bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] overflow-hidden py-6">
                 <div className="flex gap-20 whitespace-nowrap animate-marquee text-white  text-xl px-10">
                     <span>BRANDING</span>
                     <span>AGENCY</span>

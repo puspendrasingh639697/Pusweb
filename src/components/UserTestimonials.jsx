@@ -180,14 +180,14 @@ export default function UserTestimonials() {
                         </div>
 
                         {/* Review Section */}
-                        <div className="bg-[#f8a548]">
+                        <div className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]">
                           <p className="text-black rounded-br-[40px] bg-white p-3 md:p-4 text-xs md:text-sm leading-relaxed">
                             {item.review}
                           </p>
                         </div>
 
                         {/* Profile Section */}
-                        <div className="relative overflow-hidden rounded-tl-[40px] bg-[#f8a548] p-4 md:p-6">
+                        <div className="relative overflow-hidden rounded-tl-[40px]  bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] p-4 md:p-6">
                           <div className="relative z-10 flex items-center">
                             <div className="mr-3 md:mr-4 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-white text-lg font-bold text-white overflow-hidden">
                               <img
