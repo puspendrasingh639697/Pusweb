@@ -44,9 +44,9 @@ export default function GlobalReach() {
             <div className="text-center">
                 <h4 className="text-3xl font-bold pt-10 bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
 bg-clip-text text-transparent uppercase">OUR TEAM</h4>
-                <h2 className="text-4xl mt-3 bg-black bg-clip-text text-transparent font-semibold">
-                    Meet The Brains Behind Our Creative Solutions
-                </h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl mt-3 bg-black bg-clip-text text-transparent font-semibold text-center">
+  Meet The Brains Behind Our Creative Solutions
+</h2>
             </div>
 
             {/* CARD SLIDER */}

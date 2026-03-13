@@ -17,6 +17,7 @@ import FeaturesSection from './FeaturesSection';
 import HeroSection from './HeroSection';
 import ServicesSection from './LingoSetuLanding';
 import Footer from './Footer';
+import CertificationCards from './CertificationCards';
 // import WhoDashboard3D from '../utils/Dashboard';
 // import LingoSetuFinalUI from './LingoSetuFinalUI';
 
@@ -47,6 +48,7 @@ function HomepageFileAll() {
       
       <FeaturesSection/>
       <Footer/>
+      <CertificationCards/>
       {/* <LingoSetuFinalUI/> */}
       {/* <WhoDashboard3D/> */}
       
