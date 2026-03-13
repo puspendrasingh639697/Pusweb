@@ -77,13 +77,15 @@ const FAQSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#f8a548]  text-xl">
+            <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent  text-xl">
               Reason to Choose Us
             </span>
 
             <h2 className="bg-black bg-clip-text text-transparent text-3xl md:text-5xl font-black  mt-4 mb-8  uppercase">
               Client Focused Solutions : <br />
-              <span className="text-[#f8a548]">
+              <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent">
                 The Reasons Behind Our Success
               </span>
             </h2>

@@ -17,14 +17,17 @@ import pusImage from "../assets/Pus.png";
 const Footer = () => {
   return (
     <footer className="relative bg-white min-h-[50vh] flex flex-col justify-between px-6 md:px-16 lg:px-20 pt-10 overflow-hidden">
+<div className="absolute bottom-0 left-0 w-full h-[35%] pointer-events-none z-0">
 
-     <div className="absolute bottom-0 left-0 w-full h-[35%] pointer-events-none z-0">
+  {/* Image */}
   <img
     src={pusImage}
     alt="footer wave"
-    className="w-full h-full object-cover grayscale brightness-0"
-    style={{ filter: "sepia(1) saturate(5) hue-rotate(330deg)" }}
+    className="w-full h-full object-cover"
   />
+
+
+
 </div>
 
       {/* Footer Content */}
@@ -32,13 +35,23 @@ const Footer = () => {
 
         {/* Logo Section */}
         <div className="space-y-4">
-
-          {/* Logo */}
-          <img
-            src={logo}
-            alt="logo"
-            className="w-36"
-          />
+<div className="flex items-center h-[140px]">
+  <div
+    className="h-full w-[200px]"
+    style={{
+      background:
+        "radial-gradient(ellipse farthest-corner at right bottom,#FEDB37 0%,#FDB931 8%,#9f7928 30%,#8A6E2F 40%,transparent 80%), radial-gradient(ellipse farthest-corner at left top,#FFFFFF 0%,#FFFFAC 8%,#D1B464 25%,#5d4a1f 62.5%,#5d4a1f 100%)",
+      WebkitMaskImage: `url(${logo})`,
+      WebkitMaskRepeat: "no-repeat",
+      WebkitMaskSize: "contain",
+      WebkitMaskPosition: "center",
+      maskImage: `url(${logo})`,
+      maskRepeat: "no-repeat",
+      maskSize: "contain",
+      maskPosition: "center",
+    }}
+  />
+</div>
 
           
 
@@ -55,7 +68,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="w-9 h-9 flex items-center justify-center bg-[#f8a548]  text-white hover:bg-black transition"
+                  className="w-9 h-9 flex items-center justify-center bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  text-white hover:bg-black transition"
                 >
                   <Icon size={14} />
                 </a>
@@ -67,7 +80,7 @@ const Footer = () => {
 
         {/* Top Links */}
         <div>
-          <h3 className="font-bold text-lg bg-[#f8a548] bg-clip-text text-transparent
+          <h3 className="font-bold text-lg bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] bg-clip-text text-transparent
  mb-4">
             Top Links
           </h3>
@@ -83,7 +96,7 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h3 className="font-bold text-lg bg-[#f8a548]  bg-clip-text text-transparent mb-4">
+          <h3 className="font-bold text-lg bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]  bg-clip-text text-transparent mb-4">
             Our Services
           </h3>
 
@@ -97,7 +110,7 @@ const Footer = () => {
 
         {/* Information */}
         <div>
-          <h3 className="font-bold text-lg  bg-[#f8a548]  bg-clip-text text-transparent mb-4">
+          <h3 className="font-bold text-lg  bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] bg-clip-text text-transparent mb-4">
             Information
           </h3>
 

@@ -6,7 +6,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import pushImage from "../assets/push.png";   // 👈 image import
+import pushImage from "../assets/push.png";   
 
 const teamReviews = [
   {
@@ -40,8 +40,9 @@ const ContactFooter = () => {
         
         {/* Header Section */}
         <div className="relative flex justify-center items-center mb-14">
-          <h2 className="bg-black bg-clip-text text-transparent  mt-10 text-2xl md:text-5xl font-black uppercase italic tracking-tighter text-center">
-            Our Team Loves <span className="text-[#f8a548]">Us</span>
+          <h2 className=" bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent bg-clip-text text-transparent  mt-10 text-2xl md:text-5xl font-black uppercase italic tracking-tighter text-center">
+            Our Team Loves <span className="text-black">Us</span>
           </h2>
           
           <div className="absolute right-0 flex gap-4">

@@ -34,9 +34,9 @@ Enhanced with AI Technology</p>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
   {[
     "Data-Driven Marketing and Smart Campaigns",
-    "Welcome to the New Way ofConnection",
-    "AI agents for decision support and workflows",
-    "Custom AI-powered apps and platforms"
+    "Welcome to the New Way of Connection",
+    "AI-Powered Digital Marketing Solutions",
+    "Smarter Digital Marketing for Real Business Growth"
   ].map((text, i) => (
     <div 
       key={i} 
@@ -74,9 +74,7 @@ Enhanced with AI Technology</p>
             </div>
             <h3 className="text-xl font-bold">Discuss Your Requirements</h3>
             <p className="text-sm text-white/90">Get our quick yet quality services!</p>
-            <span className="absolute top-4 right-4 bg-white text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full uppercase">
-              Verified Experts
-            </span>
+            
           </div>
 
           {/* Form Fields */}

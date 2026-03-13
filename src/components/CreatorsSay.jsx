@@ -11,12 +11,12 @@ const stats = [
 ];
 
 const brands = [
-  { name: "DECATHLON", color: "text-green" },
-  { name: "CARS 24", color: "text-blue-800 italic" },
-  { name: "HT", color: "text-[#e11d48]" },
-  { name: "Panasonic", color: "text-[#0057b7]" },
-  { name: "motherson", color: "text-red" },
-  { name: "PayU", color: "text-[#89c440]" }
+  { name: "Asons", color: "text-green" },
+  { name: "Bestin", color: "text-blue-800 italic" },
+  { name: "Rupeedot", color: "text-[#e11d48]" },
+  { name: "Agni Devices", color: "text-[#0057b7]" },
+  { name: "Ankur Electrical", color: "text-red" },
+  { name: "Diamore", color: "text-[#89c440]" }
 ];
 
 export default function CreatorsSay() {
@@ -54,7 +54,7 @@ export default function CreatorsSay() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative mt-24 p-[1px] bg-[#f8a548] rounded-[1.5rem]"
+          className="relative mt-24 p-[1px] bg-black rounded-[0.5rem]"
         >
 
           {/* Main Container */}

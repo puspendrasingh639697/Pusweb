@@ -10,7 +10,7 @@ export default function ConnectionSection() {
   return (
     <section className="bg-white text-white py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        
+
         {/* LEFT SIDE */}
         <div className="space-y-12">
 
@@ -24,10 +24,11 @@ bg-clip-text text-transparent">Connection</span>
               </h2>
 
               <p className="text-black text-lg max-w-md">
-                Join the global community. 
+               Join the digital revolution with SG Media, where brands grow, audiences connect, and
                 <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
-bg-clip-text text-transparent font-bold"> LingoSetu</span> 
-                is where the world talks in real-time.
+               bg-clip-text text-transparent font-bold"> businesses </span>
+               thrive through powerful digital marketing
+                
               </p>
             </div>
           </div>
@@ -35,10 +36,25 @@ bg-clip-text text-transparent font-bold"> LingoSetu</span>
           {/* FEATURES */}
           <div className="space-y-10 pt-4">
             {[
+
+              {
+                title: "Web Development",
+                desc: "Building stunning, responsive, and user-friendly websites that perfectly reflect your brand identity.",
+                icon: <Globe size={24} />
+              },
+
+
               {
                 title: "App Development",
                 desc: "Crafting high-performance mobile applications with seamless user experiences for iOS and Android.",
                 icon: <Smartphone size={24} />
+              },
+
+
+              {
+                title: "Search Engine Optimization",
+                desc: "Boosting your online visibility with in-depth research and proven result-oriented strategies.",
+                icon: <Search size={24} />
               },
               {
                 title: "Social Media Marketing",
@@ -50,16 +66,8 @@ bg-clip-text text-transparent font-bold"> LingoSetu</span>
                 desc: "Promoting your business online using ads, SEO strategies, and smart campaigns to reach the right audience.",
                 icon: <Megaphone size={24} />
               },
-              {
-                title: "Search Engine Optimization",
-                desc: "Boosting your online visibility with in-depth research and proven result-oriented strategies.",
-                icon: <Search size={24} />
-              },
-              {
-                title: "Web Development",
-                desc: "Building stunning, responsive, and user-friendly websites that perfectly reflect your brand identity.",
-                icon: <Globe size={24} />
-              }
+
+
             ].map((feature, idx) => (
               <div key={idx} className="flex gap-6 items-start group relative">
 

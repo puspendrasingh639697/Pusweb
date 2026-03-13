@@ -116,7 +116,8 @@ export default function UserTestimonials() {
 
   return (
     <div className="max-w-8xl bg-white mx-auto  px-4">
-      <h1 className="text-2xl text-[#f8a548] md:text-3xl font-bold text-center mb-8 md:mb-12">
+      <h1 className="text-2xl bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
+bg-clip-text text-transparent md:text-3xl font-bold text-center mb-8 md:mb-12">
         Customer Reviews
       </h1>
       
@@ -166,7 +167,7 @@ export default function UserTestimonials() {
                               <svg
                                 key={i}
                                 className={`h-4 w-4 md:h-5 md:w-5 fill-current ${
-                                  i < item.rating ? "text-yellow-400" : "text-gray-300"
+                                  i < item.rating ? "text-yellow-900" : "text-gray-300"
                                 }`}
                                 viewBox="0 0 20 20"
                               >
@@ -180,7 +181,7 @@ export default function UserTestimonials() {
                         </div>
 
                         {/* Review Section */}
-                        <div className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]">
+                        <div className="bg-[#CD853F]">
                           <p className="text-black rounded-br-[40px] bg-white p-3 md:p-4 text-xs md:text-sm leading-relaxed">
                             {item.review}
                           </p>
@@ -222,8 +223,8 @@ export default function UserTestimonials() {
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 rounded-full transition-all duration-200 ${
                 currentIndex === index
-                  ? 'bg-[#f8a548] w-6'
-                  : 'bg-[#f8a548] hover:bg-gray-400'
+                  ? 'bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] w-6'
+                  : 'bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-gray-400'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
