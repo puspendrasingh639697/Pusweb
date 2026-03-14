@@ -48,7 +48,7 @@ function HomepageFileAll() {
       
       <FeaturesSection/>
       <Footer/>
-      <CertificationCards/>
+      {/* <CertificationCards/> */}
       {/* <LingoSetuFinalUI/> */}
       {/* <WhoDashboard3D/> */}
       
