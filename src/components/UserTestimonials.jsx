@@ -181,7 +181,7 @@ bg-clip-text text-transparent md:text-3xl font-bold text-center mb-8 md:mb-12">
                         </div>
 
                         {/* Review Section */}
-                        <div className="bg-[#CD853F]">
+                        <div className="bg-[#f8a548]">
                           <p className="text-black rounded-br-[40px] bg-white p-3 md:p-4 text-xs md:text-sm leading-relaxed">
                             {item.review}
                           </p>

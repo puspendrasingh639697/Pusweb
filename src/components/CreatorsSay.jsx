@@ -58,7 +58,7 @@ export default function CreatorsSay() {
         >
 
           {/* Main Container */}
-          <div className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] py-20 px-6 md:px-10 rounded-[1.5rem] shadow-4xl">
+          <div className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] py-20 px-6 md:px-10 rounded-[0.5rem] shadow-4xl">
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
               {stats.map((stat, idx) => (

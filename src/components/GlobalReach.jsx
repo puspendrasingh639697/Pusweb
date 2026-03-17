@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import img1 from "../assets/pushpend.webp";
 import img2 from "../assets/puspendra.png";
+import Footer from "../pages/Footer";
 
 export default function GlobalReach() {
     const employees = [
@@ -38,6 +39,8 @@ export default function GlobalReach() {
 
     return (
         /* FIXED: Added border-t-0 and pt-0 to ensure no black line at top */
+        <>
+
         <div className="w-full bg-white border-t-0 pt-0">
 
             {/* TITLE */}
@@ -106,5 +109,9 @@ bg-clip-text text-transparent uppercase">OUR TEAM</h4>
                 }
             `}</style>
         </div>
+        
+       
+        
+        </>
     );
 }

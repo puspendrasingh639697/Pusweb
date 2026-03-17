@@ -5,18 +5,21 @@ import { motion } from "framer-motion";
 import { Smartphone, Search, Globe, Share2, Megaphone } from "lucide-react";
 
 import centerImg from "../assets/sec.png";
+import Footer from "./Footer";
 
 export default function ConnectionSection() {
   return (
+   <>
+
     <section className="bg-white py-24 px-6 overflow-hidden">
 
       {/* TOP HEADING */}
       <div className="text-center mb-20">
-        <h2 className="text-5xl md:text-7xl font-black leading-tight text-black">
-          Welcome to the <br /> New Way of <br />
+        <h2 className="text-4xl md:text-5xl font-black leading-tight text-black">
+          Welcome to the  New Way of   <br/>
           <span className="bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
           bg-clip-text text-transparent">
-            Connection
+              Connection
           </span>
         </h2>
       </div>
@@ -38,7 +41,7 @@ export default function ConnectionSection() {
               icon: <Smartphone size={22} />
             },
             {
-              title: "Search Engine Optimization",
+              title: "S.E Optimization",
               desc: "Boosting your online visibility with proven SEO strategies.",
               icon: <Search size={22} />
             }
@@ -75,7 +78,7 @@ export default function ConnectionSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="w-[320px] h-[320px] rounded-full overflow-hidden shadow-2xl border-[1px] border-white"
+            className="w-[320px] h-[320px] rounded-full overflow-hidden shadow-2xl border-white"
           >
 
             <img
@@ -155,5 +158,10 @@ export default function ConnectionSection() {
       </div>
 
     </section>
+
+   
+   
+   
+   </>
   );
 }

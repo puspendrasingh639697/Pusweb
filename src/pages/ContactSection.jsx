@@ -1,98 +1,204 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import {
+  Send,
+  User,
+  Mail,
+  MessageSquare,
+  PenLine,
+  ChevronDown,
+} from "lucide-react";
+import { useEffect, useState, useRef } from "react";
 
-// Assets path
-import leftImg from '../assets/mengirls.png';
-import rightImg from '../assets/Offies.png';
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] },
+};
 
 export default function ContactSection() {
-  // 8 Active Users - Grid-like placement for 3D feel
-  const liveUsers = [
-    { id: 1, x: "20%", y: "15%", img: "https://i.pravatar.cc/150?img=11" },
-    { id: 2, x: "80%", y: "12%", img: "https://i.pravatar.cc/150?img=32" },
-    { id: 3, x: "35%", y: "45%", img: "https://i.pravatar.cc/150?img=53" },
-    { id: 4, x: "65%", y: "40%", img: "https://i.pravatar.cc/150?img=44" },
-    { id: 5, x: "15%", y: "75%", img: "https://i.pravatar.cc/150?img=20" },
-    { id: 6, x: "85%", y: "80%", img: "https://i.pravatar.cc/150?img=25" },
-    { id: 7, x: "50%", y: "20%", img: "https://i.pravatar.cc/150?img=33" },
-    { id: 8, x: "50%", y: "85%", img: "https://i.pravatar.cc/150?img=47" },
-  ];
+  const enquiryTypes = ["Buyer", "Farmer", "Partnership", "Other"];
+  const text = "Get In Touch";
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
+  const [selectedEnquiry, setSelectedEnquiry] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Golden Gradient Class for Reuse
+  const goldGradient = "bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]";
+
+  useEffect(() => {
+    let typingSpeed = isDeleting ? 60 : 120;
+    const typingInterval = setInterval(() => {
+      setDisplayText((prev) => {
+        if (!isDeleting) {
+          if (prev.length < text.length) return text.slice(0, prev.length + 1);
+          setTimeout(() => setIsDeleting(true), 2000);
+          return prev;
+        } else {
+          if (prev.length > 0) return text.slice(0, prev.length - 1);
+          setIsDeleting(false);
+          return "";
+        }
+      });
+    }, typingSpeed);
+    const cursorInterval = setInterval(() => setShowCursor((prev) => !prev), 500);
+    return () => { clearInterval(typingInterval); clearInterval(cursorInterval); };
+  }, [isDeleting]);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) setIsOpen(false);
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <section className="bg-black py-20 px-6 w-full overflow-hidden relative min-h-[900px] flex flex-col items-center">
-      
-      {/* 1. MAIN 3D TOP HEADING */}
-      <div className="text-center mb-16 z-[100] perspective-1000">
-        <motion.div
-          initial={{ rotateX: 45, opacity: 0 }}
-          animate={{ rotateX: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-white text-6xl md:text-7xl font-black italic tracking-tighter uppercase leading-none">
-            GLOBAL <span className="text-[#0BF487] drop-shadow-[0_0_15px_rgba(11,244,135,0.5)]">ACTIVE</span> HUB
-          </h2>
-          <p className="text-zinc-500 text-xs font-bold tracking-[0.5em] uppercase mt-4">
-            Connecting 8 live nodes across the 3D discovery network
-          </p>
-        </motion.div>
-      </div>
-
-      <div className="max-w-[1920px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-20 relative">
+    <section id="Contact-Us" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
         
-        {/* --- LEFT SIDE (IMAGE ONLY) --- */}
-        <div className="flex justify-center lg:justify-start relative z-20 group">
-             <img 
-                src={leftImg} 
-                className="w-full h-auto object-contain max-h-[550px] grayscale-0 brightness-100 group-hover:grayscale group-hover:brightness-50 transition-all duration-700 ease-in-out" 
-                alt="left-team"
-             />
-        </div>
+        {/* Heading Section */}
+        <motion.div
+          className="text-center mb-16"
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <span className={`${goldGradient} text-white mb-6 px-10 py-2 font-black text-[10px] uppercase tracking-[0.3em] inline-block shadow-lg`}>
+            Contact Us
+          </span>
 
-        {/* --- RIGHT SIDE (IMAGE ONLY) --- */}
-        <div className="flex justify-center lg:justify-end relative z-20 group">
-             <img 
-                src={rightImg} 
-                className="w-full h-auto object-contain max-h-[550px] grayscale-0 brightness-100 group-hover:grayscale group-hover:brightness-50 transition-all duration-700 ease-in-out" 
-                alt="right-team"
-             />
-        </div>
+          <h2 className="text-5xl lg:text-6xl font-black mb-6 text-[#9f7928] tracking-tighter">
+            {displayText}
+            <span className="ml-1 text-[#FDB931]">{showCursor ? "|" : " "}</span>
+          </h2>
 
-        {/* --- CENTER OVERLAY: 3D USERS (ONLY GREEN ON HOVER) --- */}
-        <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-30">
-          <div className="relative w-full h-[650px] max-w-[900px]">
-            {liveUsers.map((user) => (
-              <motion.div
-                key={user.id}
-                className="absolute"
-                style={{ top: user.y, left: user.x }}
-                animate={{ 
-                  y: [0, -30, 0],
-                  scale: [1, 1.05, 1]
-                }}
-                transition={{ 
-                  duration: 5, 
-                  repeat: Infinity, 
-                  delay: user.id * 0.3,
-                  ease: "easeInOut" 
-                }}
-              >
-                <div className="relative pointer-events-auto cursor-pointer group/user">
-                  {/* Glow: Only on hover */}
-                  <div className="absolute -inset-4 bg-[#0BF487] rounded-full blur-xl opacity-0 group-hover/user:opacity-60 transition-opacity duration-500"></div>
-                  
-                  {/* Avatar: Green border only on hover */}
-                  <div className="relative w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-zinc-800 p-1 bg-black group-hover/user:border-[#0BF487] transition-all duration-500">
-                      <img src={user.img} className="w-full h-full rounded-full object-cover grayscale group-hover/user:grayscale-0 transition-all" alt="active" />
-                      
-                      {/* Active Dot: Green on hover */}
-                      <div className="absolute bottom-1 right-1 w-3.5 h-3.5 bg-zinc-800 rounded-full border-2 border-black group-hover/user:bg-[#0BF487] transition-colors"></div>
+          <h2 className="text-xl lg:text-2xl font-medium tracking-tight text-gray-500 uppercase">
+            Ready to start your journey?{" "}
+            <span className="text-[#8A6E2F] font-black underline decoration-[#FDB931] decoration-2 underline-offset-8">
+              Contact our team today
+            </span>
+          </h2>
+        </motion.div>
+
+        {/* Form Container */}
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <div className="p-10 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.1)] bg-white border border-gray-100 rounded-sm">
+              <form className="space-y-8">
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Name Input */}
+                  <div className="group">
+                    <label className="text-[11px] font-black mb-3 block text-[#8A6E2F] uppercase tracking-[0.15em]">
+                      Full Name
+                    </label>
+                    <div className="relative border-b-2 border-gray-200 group-focus-within:border-[#FDB931] transition-colors">
+                      <User className="absolute left-0 top-3 w-5 h-5 text-[#D1B464]" />
+                      <input
+                        type="text"
+                        placeholder="ENTER YOUR NAME"
+                        className="w-full bg-transparent pl-10 pr-4 py-3 text-black font-bold text-sm focus:outline-none placeholder:text-gray-300 tracking-wider"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email Input */}
+                  <div className="group">
+                    <label className="text-[11px] font-black mb-3 block text-[#8A6E2F] uppercase tracking-[0.15em]">
+                      Email Address
+                    </label>
+                    <div className="relative border-b-2 border-gray-200 group-focus-within:border-[#FDB931] transition-colors">
+                      <Mail className="absolute left-0 top-3 w-5 h-5 text-[#D1B464]" />
+                      <input
+                        type="email"
+                        placeholder="YOUR@EMAIL.COM"
+                        className="w-full bg-transparent pl-10 pr-4 py-3 text-black font-bold text-sm focus:outline-none placeholder:text-gray-300 tracking-wider"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
+                {/* Custom Dropdown */}
+                <div ref={dropdownRef} className="group">
+                  <label className="text-[11px] font-black mb-3 block text-[#8A6E2F] uppercase tracking-[0.15em]">
+                    Subject of Enquiry
+                  </label>
+                  <div className="relative border-b-2 border-gray-200 group-focus-within:border-[#FDB931] transition-colors">
+                    <MessageSquare className="absolute left-0 top-3 w-5 h-5 text-[#D1B464] pointer-events-none" />
+                    <div
+                      onClick={() => setIsOpen(!isOpen)}
+                      className="w-full pl-10 pr-10 py-3 cursor-pointer flex items-center justify-between"
+                    >
+                      <span className={`text-sm font-bold tracking-wider ${selectedEnquiry ? "text-black" : "text-gray-300"}`}>
+                        {selectedEnquiry || "SELECT OPTION"}
+                      </span>
+                      <ChevronDown className={`w-5 h-5 text-[#FDB931] transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                    </div>
+
+                    {isOpen && (
+                      <div className="absolute z-50 mt-1 w-full bg-white border border-gray-100 shadow-2xl rounded-sm overflow-hidden">
+                        {enquiryTypes.map((type, index) => (
+                          <div
+                            key={index}
+                            onClick={() => { setSelectedEnquiry(type); setIsOpen(false); }}
+                            className="px-6 py-4 cursor-pointer text-xs font-black tracking-widest text-[#8A6E2F] hover:bg-gray-50 transition-all uppercase"
+                          >
+                            {type}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Message Box */}
+                <div className="group">
+                  <label className="text-[11px] font-black mb-3 block text-[#8A6E2F] uppercase tracking-[0.15em]">
+                    Your Message
+                  </label>
+                  <div className="relative border-b-2 border-gray-200 group-focus-within:border-[#FDB931] transition-colors">
+                    <PenLine className="absolute left-0 top-3 w-5 h-5 text-[#D1B464]" />
+                    <textarea
+                      rows={4}
+                      placeholder="HOW CAN WE HELP YOU?"
+                      className="w-full bg-transparent pl-10 pr-4 py-3 text-black font-bold text-sm focus:outline-none placeholder:text-gray-300 resize-none tracking-wider"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* THE GOLD BUTTON - AS REQUESTED */}
+                <div className="pt-8">
+                  <button
+                    type="submit"
+                    className={`${goldGradient} w-full text-white font-black px-12 py-5 rounded-sm text-[11px] uppercase tracking-[0.2em] 
+                    flex justify-center items-center gap-4 shadow-[0_10px_30px_rgba(159,121,40,0.4)] 
+                    hover:scale-[1.02] active:scale-95 transition-all duration-300 cursor-pointer`}
+                  >
+                    Send Enquiry
+                    <Send className="w-4 h-4" />
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </motion.div>
+          
+          <p className="text-center mt-12 text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">
+            * Our team typically responds within 24 business hours
+          </p>
+        </div>
       </div>
     </section>
   );
