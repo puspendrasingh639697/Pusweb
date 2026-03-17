@@ -74,7 +74,7 @@ export default function Splash() {
           navigate("/discover", { replace: true });
         } 
         else {
-          navigate("/mainscreen", { replace: true });
+          navigate("/home", { replace: true });
         }
 
       }, 3000);

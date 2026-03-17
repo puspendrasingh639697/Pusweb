@@ -16,7 +16,7 @@ export default function Services() {
     },
     {
       id: 3,
-      title: "S.E Optimization",
+      title: "S.E.O",
       desc: "Boost your website visibility with strategic SEO, higher rankings, targeted traffic, and data-driven optimization for sustainable online growth."
     },
     {

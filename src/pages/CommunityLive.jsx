@@ -41,7 +41,7 @@ export default function ConnectionSection() {
               icon: <Smartphone size={22} />
             },
             {
-              title: "S.E Optimization",
+              title: "S.E.O",
               desc: "Boosting your online visibility with proven SEO strategies.",
               icon: <Search size={22} />
             }

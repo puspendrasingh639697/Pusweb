@@ -10,8 +10,11 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaGlobe,
-  FaVideo
+  FaVideo,
+  FaWhatsapp,
+  FaCalendarAlt 
 } from "react-icons/fa";
+// import { FaPhoneAlt, FaWhatsapp, FaVideo } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
 import pusImage from "../assets/Pus.png";
@@ -133,38 +136,40 @@ const Footer = () => {
 
       </div>
 
-      {/* Floating Buttons */}
-      <div className="fixed right-5 bottom-24 flex flex-col gap-3 z-50">
+  
 
-        {/* Globe */}
-        <a
-          href="#"
-          className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg
-          bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]"
-        >
-          <FaGlobe size={18} />
-        </a>
 
-        {/* Call */}
-        <a
-          href="tel:+919192939495"
-          className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg
-           bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]"
-        >
-          <FaPhoneAlt size={18} />
-        </a>
+<div className="fixed right-5 bottom-24 flex flex-col gap-3 z-50">
 
-        {/* Meeting */}
-        <a
-          href="#"
-          className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg
-           bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]"
-        >
-          <FaVideo size={18} />
-        </a>
+  {/* Call */}
+  <a
+    href="tel:+9584218956"
+    className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-blue-600 transition"
+  >
+    <FaPhoneAlt size={18}  />
+  </a>
 
-      </div>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919192939495"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-green-600 transition"
+  >
+    <FaWhatsapp size={18} />
+  </a>
 
+  {/* Meeting */}
+  <a
+    href="https://meet.google.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg  bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)] hover:bg-blue-800 transition"
+  >
+    <FaCalendarAlt size={18} />
+  </a>
+
+</div>
       {/* Bottom Line */}
       <div className="border-t border-black mt-8 py-4 text-center text-sm text-black relative z-10">
         ©2026 <span className="font-semibold">Sgtechnology.com</span>. All Rights Reserved.

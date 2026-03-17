@@ -35,7 +35,7 @@ export default function AboutSection() {
 
             <div className="space-y-6 max-w-xl">
               <p className="text-black text-lg leading-relaxed font-semibold">
-                At Grav Web Solution Pvt Ltd our mission is to empower businesses with innovative digital marketing solutions that drive growth and success. We are committed to delivering tailored services in social media marketing, performance marketing, website design, lead generation, and email marketing.
+                 SG technology our mission is to empower businesses with innovative digital marketing solutions that drive growth and success. We are committed to delivering tailored services in social media marketing, performance marketing, website design, lead generation, and email marketing.
               </p>
             </div>
 
