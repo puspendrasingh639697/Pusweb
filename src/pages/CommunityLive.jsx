@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Smartphone, Search, Globe, Share2, Megaphone } from "lucide-react";
 
 import centerImg from "../assets/sec.png";
+import seoIcon from "../assets/seo.png";
 import Footer from "./Footer";
 
 export default function ConnectionSection() {
@@ -51,7 +52,7 @@ export default function ConnectionSection() {
 
               <div className="absolute -left-3 top-0 bottom-0 w-[2px] bg-[#034a1f] scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top" />
 
-              <div className="text-[#f8a548] mt-1 group-hover:scale-110 transition">
+              <div className="text-black mt-1 group-hover:scale-110 transition">
                 {feature.icon}
               </div>
 
@@ -116,7 +117,7 @@ export default function ConnectionSection() {
 
               <div className="absolute -left-3 top-0 bottom-0 w-[2px] bg-[#034a1f] scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top" />
 
-              <div className="text-[#f8a548] mt-1 group-hover:scale-110 transition">
+              <div className="text-black mt-1 group-hover:scale-110 transition">
                 {feature.icon}
               </div>
 

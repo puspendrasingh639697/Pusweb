@@ -1,10 +1,10 @@
 // Import images (agar Webpack/CRA use kar rahe ho)
-import blogImage1 from '../assets/blogimage.jpg';
-import blogImage2 from '../assets/seoimages.jpg';
-import blogImage3 from '../assets/blogweb.jpg';
-import blogImage4 from '../assets/googleimages.png';
-import blogImage5 from '../assets/Email.png';
-import blogImage6 from '../assets/contant.jpg';
+import blogImage1 from '../assets/ads.png';
+import blogImage2 from '../assets/adwords.png';
+import blogImage3 from '../assets/appdevelopment.png';
+import blogImage4 from '../assets/bullhorn.png';
+import blogImage5 from '../assets/seo.png';
+import blogImage6 from '../assets/writer.png';
 
 export const blogs = [
  

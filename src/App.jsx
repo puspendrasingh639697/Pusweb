@@ -37,7 +37,11 @@ function App() {
 
          <Route path="/servies" element={<Services />} />
 
-         <Route path="/blog" element={<BlogPages />} />
+         {/* <Route path="/blog" element={<BlogPages />} />
+          */}
+
+          <Route path="/blog" element={<BlogPages />} />
+        <Route path="/blog/:id" element={<BlogPages />} />
 
           
 

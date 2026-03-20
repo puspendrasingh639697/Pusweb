@@ -5,24 +5,24 @@ import { Plus } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Is LingoSetu free to use?",
-    answer: "Yes! Basic language learning, private HD calls, and meeting experts can be started for free. Some advanced features might require credits, but you can explore most of the app without paying anything."
+    question: "What services does SG Technology provide?",
+    answer: "SG Technology offers a wide range of digital services including web development, app development, UI/UX design, and digital marketing solutions tailored to business needs."
   },
   {
-    question: "How do I download LingoSetu?",
-    answer: "LingoSetu is available on both Google Play Store and Apple App Store. Simply click the download buttons in the header or search for 'LingoSetu' in your store."
+    question: "Why should I choose SG Technology?",
+    answer: "SG Technology focuses on quality, innovation, and customer satisfaction. Their professional team ensures timely delivery and high-performance solutions."
   },
   {
-    question: "Is my data and communication safe?",
-    answer: "Safety is our priority. All your chats and HD video calls are end-to-end encrypted. We also have 24/7 moderation to keep the community respectful and secure."
+    question: "Does SG Technology provide custom solutions?",
+    answer: "Yes, SG Technology specializes in creating custom solutions based on your business requirements to ensure the best results."
   },
   {
-    question: "What are LingoSetu credits?",
-    answer: "Credits are our in-app currency used to unlock premium lessons, book dedicated time with top global experts, and access special learning materials."
+    question: "How can I contact SG Technology?",
+    answer: "You can contact SG Technology through their website, email, or phone. Their support team is responsive and ready to assist you."
   },
   {
-    question: "Can I delete my account anytime?",
-    answer: "Yes, you have full control over your data. You can delete your account and payment information instantly through the app settings whenever you want."
+    question: "Is SG Technology suitable for startups?",
+    answer: "Absolutely! SG Technology works with startups as well as established businesses, offering scalable and cost-effective solutions."
   }
 ];
 

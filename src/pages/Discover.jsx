@@ -53,7 +53,7 @@ export default function LingoSetuHeader() {
         />
 
         {/* DESKTOP MENU */}
-        <div className="hidden lg:flex items-center gap-10 text-[15px] font-medium text-gray-700">
+        <div className="hidden lg:flex items-center gap-10 text-[15px] font-medium text-black">
 
           {menuItems.map((item, index) => (
             <button

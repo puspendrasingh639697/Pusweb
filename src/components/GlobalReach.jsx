@@ -5,28 +5,28 @@ import img2 from "../assets/puspendra.png";
 import Footer from "../pages/Footer";
 
 export default function GlobalReach() {
-    const employees = [
-        { name: "Puspendra", role: "Developer", img: img1 },
-        { name: "Puspendra", role: "Designer", img: img2 },
-        { name: "Puspendra", role: "Developer", img: img1 },
-        { name: "Puspendra", role: "Designer", img: img2 },
-        { name: "Puspendra", role: "Developer", img: img1 },
-        { name: "Puspendra", role: "Designer", img: img2 },
-        { name: "Puspendra", role: "Developer", img: img1 },
-        { name: "Puspendra", role: "Designer", img: img2 },
-        { name: "Puspendra", role: "Developer", img: img1 },
-        { name: "Puspendra0", role: "Designer", img: img2 },
-        { name: "Puspendra1", role: "Developer", img: img1 },
-        { name: "Puspendra2", role: "Designer", img: img2 },
-        { name: "Puspendra3", role: "Developer", img: img1 },
-        { name: "Puspendra4", role: "Designer", img: img2 },
-        { name: "Puspendra5", role: "Developer", img: img1 },
-        { name: "Puspendra6", role: "Designer", img: img2 },
-        { name: "Puspendra7", role: "Developer", img: img1 },
-        { name: "Puspendra8", role: "Designer", img: img2 },
-        { name: "Puspendra9", role: "Developer", img: img1 },
-        { name: "Puspendra0", role: "Designer", img: img2 }
-    ];
+  const employees = [
+  { name: "Puspendra Rajpoot", role: "Frontend Developer", img: img1 },
+  { name: "Rohit Verma", role: "Backend Developer", img: img2 },
+  { name: "Neha Singh", role: "UI/UX Designer", img: img1 },
+  { name: "Ankit Gupta", role: "Full Stack Developer", img: img2 },
+  { name: "Priya Mehta", role: "Graphic Designer", img: img1 },
+  { name: "Karan Patel", role: "Mobile App Developer", img: img2 },
+  { name: "Sneha Kapoor", role: "SEO Specialist", img: img1 },
+  { name: "Vikas Yadav", role: "Digital Marketer", img: img2 },
+  { name: "Rahul Jain", role: "Project Manager", img: img1 },
+  { name: "Pooja Mishra", role: "Content Strategist", img: img2 },
+  { name: "Arjun Singh", role: "DevOps Engineer", img: img1 },
+  { name: "Meena Rathi", role: "QA Tester", img: img2 },
+  { name: "Saurabh Dubey", role: "Software Engineer", img: img1 },
+  { name: "Nikita Sharma", role: "Product Designer", img: img2 },
+  { name: "Deepak Chauhan", role: "Cloud Engineer", img: img1 },
+  { name: "Ritika Soni", role: "HR Manager", img: img2 },
+  { name: "Manish Tiwari", role: "Business Analyst", img: img1 },
+  { name: "Anjali Verma", role: "Marketing Manager", img: img2 },
+  { name: "Gaurav Saxena", role: "Tech Lead", img: img1 },
+  { name: "Komal Arora", role: "Social Media Manager", img: img2 }
+];
 
     const [index, setIndex] = useState(0);
 

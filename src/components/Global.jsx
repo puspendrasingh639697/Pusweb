@@ -1,38 +1,52 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// ✅ ICONS IMPORT
+import seoIcon from "../assets/seo.png";
+import leadIcon from "../assets/qualifying.png";
+import videoIcon from "../assets/production.png";
+import webIcon from "../assets/digital.png";
+import brandIcon from "../assets/brand.png";
+import appIcon from "../assets/appdevelopment.png";
+
 export default function Services() {
 
   const services = [
     {
       id: 1,
       title: "Website Development",
-      desc: "Build powerful, responsive websites that enhance user experience, strengthen brand presence, and drive business growth with modern design and technology"
+      desc: "Build powerful, responsive websites that enhance user experience, strengthen brand presence, and drive business growth with modern design and technology",
+      icon: webIcon
     },
     {
       id: 2,
       title: "App Development",
-      desc: "Create scalable, high-performance applications that streamline business processes, enhance user experience, and drive innovation with modern technology and smart development."
+      desc: "Create scalable, high-performance applications that streamline business processes, enhance user experience, and drive innovation with modern technology and smart development.",
+      icon: appIcon
     },
     {
       id: 3,
       title: "S.E.O",
-      desc: "Boost your website visibility with strategic SEO, higher rankings, targeted traffic, and data-driven optimization for sustainable online growth."
+      desc: "Boost your website visibility with strategic SEO, higher rankings, targeted traffic, and data-driven optimization for sustainable online growth.",
+      icon: seoIcon
     },
     {
       id: 4,
       title: "Lead Generation",
-      desc: "Generate high-quality leads with targeted digital strategies that attract the right audience, increase engagement, and convert potential customers into loyal clients."
+      desc: "Generate high-quality leads with targeted digital strategies that attract the right audience, increase engagement, and convert potential customers into loyal clients.",
+      icon: leadIcon
     },
     {
       id: 5,
       title: "Branding & Designing",
-      desc: "Build a strong brand identity with creative design, compelling visuals, and strategic branding that makes your business memorable and impactful."
+      desc: "Build a strong brand identity with creative design, compelling visuals, and strategic branding that makes your business memorable and impactful.",
+      icon: brandIcon
     },
     {
       id: 6,
       title: "Video Production",
-      desc: "Create compelling videos that tell your brand story, engage audiences, and boost digital presence with creative, high-quality video production."
+      desc: "Create compelling videos that tell your brand story, engage audiences, and boost digital presence with creative, high-quality video production.",
+      icon: videoIcon
     }
   ];
 
@@ -50,7 +64,7 @@ export default function Services() {
             className="relative group"
           >
 
-            {/* 3D Shadow Layer (Same Gradient) */}
+            {/* 3D Shadow Layer */}
             <div className="absolute inset-0 rounded-xl 
             bg-[radial-gradient(ellipse_farthest-corner_at_right_bottom,#FEDB37_0%,#FDB931_8%,#9f7928_30%,#8A6E2F_40%,transparent_80%),radial-gradient(ellipse_farthest-corner_at_left_top,#FFFFFF_0%,#FFFFAC_8%,#D1B464_25%,#5d4a1f_62.5%,#5d4a1f_100%)]
             translate-x-3 translate-y-3 opacity-40 blur-sm"></div>
@@ -62,13 +76,16 @@ export default function Services() {
             hover:shadow-[0_20px_60px_rgba(10,31,92,0.4)]
             transition-all duration-300">
 
-              {/* Icon Box */}
+              {/* ✅ ICON ADDED (ONLY CHANGE) */}
               <div className="w-20 h-20 mb-8 rounded-2xl flex items-center justify-center 
-              bg-gray-50 group-hover:bg-white/10 transition-all duration-300">
+   transition-all duration-300">
 
-                <div className="w-12 h-12 border-2 border-dashed border-gray-400 
-                rounded-md opacity-40 group-hover:border-white group-hover:opacity-70"/>
-              </div>
+  <img
+    src={service.icon}
+    alt={service.title}
+    className="w-16 h-16 object-contain opacity-90 group-hover:opacity-100"
+  />
+</div>
 
               {/* Title */}
               <h3 className="text-xl font-bold mb-4 bg-black bg-clip-text text-transparent group-hover:text-white transition">

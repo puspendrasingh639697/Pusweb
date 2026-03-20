@@ -5,11 +5,11 @@ import userProfileImg from '../assets/puspendra.png';
 const testimonials = [
   { 
     id: 1,
-    name: "Aarav", 
+    name: "Titu R.", 
     role: "Student",
     image: userProfileImg,
     rating: 5,
-    review: "LingoSetu made language learning so easy. The HD calls are super clear and the interface is incredibly smooth! I have never experienced such seamless interaction with tutors before. It truly feels like a global classroom right in my pocket."
+    review: "They offer creative and effective digital solutions that truly stand out in today’s competitive market. Their team understands client requirements and delivers results that exceed expectations. The quality of work, attention to detail, and timely execution make them a great choice. Overall, their services provide excellent value and are totally worth it"
   },
   { 
     id: 2,
@@ -17,7 +17,7 @@ const testimonials = [
     role: "Language Learner",
     image: userProfileImg,
     rating: 5,
-    review: "Met amazing experts from around the world. Totally hooked to the progress tracker and real-time feedback system. It helped me overcome my speaking anxiety within just a few weeks of consistent practice and expert guidance."
+    review: "SG Technology is a reliable and innovative tech company that provides modern solutions. Their focus is on quality, performance, and customer satisfaction. The team has a professional approach and ensures timely delivery. Their work in web development and digital services is impressive. Overall, SG Technology is a trustworthy and growth-oriented company"
   },
   { 
     id: 3,
@@ -25,7 +25,7 @@ const testimonials = [
     role: "Professional",
     image: userProfileImg,
     rating: 5,
-    review: "This app feels alive! Every lesson is exciting and the UI is just beautiful. Best learning experience so far. The community is very supportive and the native speakers provide insights that you just can't find in any textbook."
+    review: "SG Technology delivered an excellent website for our NGO with integrated donation features and essential functionalities. Their team built a secure, user-friendly, and fully responsive platform optimized for SEO. The donation system works smoothly, helping us increase contributions and engagement. Their professionalism, timely delivery, and ongoing support make them a reliable technology partner."
   },
   { 
     id: 4,
@@ -33,7 +33,7 @@ const testimonials = [
     role: "Business Executive",
     image: userProfileImg,
     rating: 5,
-    review: "The best platform for mastering new languages quickly and efficiently. Highly recommended for professionals who travel. The flexibility of scheduling calls at any time fits perfectly with my busy work-life balance and goals."
+    review: "SG Technology delivered exceptional service in developing a healthcare application similar to 1mg. Their team demonstrated strong expertise in app development, UI/UX design, and scalable solutions. The application is fast, user-friendly, and optimized for performance. Their professional approach, timely delivery, and ongoing support make them a reliable partner for high-quality, SEO-friendly digital solutions"
   },
   { 
     id: 6,
@@ -41,7 +41,7 @@ const testimonials = [
     role: "Student",
     image: userProfileImg,
     rating: 5,
-    review: "LingoSetu made language learning so easy. The HD calls are super clear and the interface is incredibly smooth! I have never experienced such seamless interaction with tutors before. It truly feels like a global classroom right in my pocket."
+    review: "I have a great experience with SG Technology for my Ankur Electrical Shop. Their team is professional, responsive, and delivered effective digital marketing strategies. I saw increased customer inquiries and footfall quickly. Their personalized approach and regular updates made a big difference. Highly recommended for growing local businesses online"
   },
   { 
     id: 7,
@@ -49,7 +49,7 @@ const testimonials = [
     role: "Language Learner",
     image: userProfileImg,
     rating: 5,
-    review: "Met amazing experts from around the world. Totally hooked to the progress tracker and real-time feedback system. It helped me overcome my speaking anxiety within just a few weeks of consistent practice and expert guidance."
+    review: "We partnered with SG Technology for our travel application, and the experience has been excellent. Their team delivered a user-friendly, well-designed, and high-performing app tailored to our needs. Communication was smooth, timelines were met, and support has been reliable. Highly professional service—strongly recommended for travel tech solutions"
   },
   { 
     id: 8,
@@ -57,7 +57,7 @@ const testimonials = [
     role: "Professional",
     image: userProfileImg,
     rating: 5,
-    review: "This app feels alive! Every lesson is exciting and the UI is just beautiful. Best learning experience so far. The community is very supportive and the native speakers provide insights that you just can't find in any textbook."
+    review: "As Bhumiik, we had a great experience with SG Technology in growing our digital presence. Their team delivered creative strategies, consistent branding, and strong online visibility. We saw real engagement and growth. Highly professional and result-driven service—definitely recommended for brands aiming to scale digitally"
   },
   { 
     id: 9,
@@ -65,7 +65,7 @@ const testimonials = [
     role: "Business Executive",
     image: userProfileImg,
     rating: 5,
-    review: "The best platform for mastering new languages quickly and efficiently. Highly recommended for professionals who travel. The flexibility of scheduling calls at any time fits perfectly with my busy work-life balance and goals."
+    review: "SG Technology delivered outstanding marketing services for my banquet hall. Their team is creative, professional, and highly responsive. They helped increase our visibility and bookings significantly through effective strategies. I’m  satisfied with the results and would highly recommend them to anyone looking to grow their business"
   }
 ];
 

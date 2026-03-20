@@ -85,7 +85,7 @@ function HomepageFileAll() {
       <Global />
       <ConnectionSection />
       <LiveDiscovery />
-      <GlobalReach />
+      {/* <GlobalReach /> */}
       <ServicesSection />
       <UserTestimonials />
       <WhyChooseLingoSetu />

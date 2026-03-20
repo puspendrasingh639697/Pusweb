@@ -27,7 +27,7 @@ const FeaturesSection = () => {
               Get a clear estimate of effort, timeline, and ROI before committing resources.
             </p>
             
-            <button className="bg-white text-[#f8a548] text-xs md:text-base font-semibold py-2 px-6 md:py-3 md:px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300">
+            <button className="bg-white text-black text-xs md:text-base font-semibold py-2 px-6 md:py-3 md:px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300">
               Get AI Cost & ROI Estimate
             </button>
           </motion.div>

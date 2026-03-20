@@ -10,23 +10,44 @@ import pushImage from "../assets/push.png";
 
 const teamReviews = [
   {
-    role: "Manager",
-    text: "The company fosters a culture of continuous learning. There are opportunities to learn from experienced colleagues and stay up-to-date on industry trends.",
+    role: "Project Manager",
+    text: "SG Technology fosters a culture of innovation and continuous learning. The team environment is supportive and growth-oriented. Feel free to connect with us to learn more.",
     name: "Om Prakash",
     img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
     stars: 5
   },
   {
-    role: "HOD, iOS Dept.",
-    text: "The collaborative tools and processes implemented here streamline teamwork and communication. This allows us to work efficiently and achieve results quickly.",
+    role: "HOD, Development",
+    text: "Great collaboration and smooth workflow. The team works efficiently with modern tools and clear communication. Reach out to us anytime for collaboration.",
     name: "Gauri Shankar Prasad",
     img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
     stars: 5
   },
   {
     role: "Lead Developer",
-    text: "LingoSetu provides a world-class environment for application development and data engineering. Excellence is truly a way of life here.",
+    text: "A professional environment where creativity and technical excellence go hand in hand. Contact us to build something amazing together.",
     name: "Rahul Verma",
+    img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    stars: 5
+  },
+  {
+    role: "UI/UX Designer",
+    text: "Design freedom and team support make SG Technology an amazing place to create user-focused experiences. Let’s connect and create great designs.",
+    name: "Neha Gupta",
+    img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    stars: 5
+  },
+  {
+    role: "Frontend Developer",
+    text: "Working here helped me grow my skills and build real-world projects with a great team. Get in touch with us to start your project.",
+    name: "Amit Kumar",
+    img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    stars: 5
+  },
+  {
+    role: "Backend Developer",
+    text: "Strong leadership, clear goals, and a positive work culture make SG Technology a great workplace. Contact us today to collaborate.",
+    name: "Vikas Singh",
     img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
     stars: 5
   }
