@@ -83,11 +83,11 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-2 text-sm text-black font-semibold">
-            <li><Link to="/aboutSection" className="hover:text-[#f8a548]">About Us</Link></li>
-            <li><Link to="/globalReach" className="hover:text-[#f8a548]">Our Team</Link></li>
+            <li><Link to="/" className="hover:text-[#f8a548]">Home</Link></li>
+            <li><Link to="/about" className="hover:text-[#f8a548]">About Us</Link></li>
             <li><Link to="/connectionSection" className="hover:text-[#f8a548]">Portfolio</Link></li>
-            <li><Link to="/Blog" className="hover:text-[#f8a548]">Career</Link></li>
-            <li><Link to="/contact" className="hover:text-[#f8a548]">Contact Us</Link></li>
+            <li><Link to="/blog" className="hover:text-[#f8a548]">Blog</Link></li>
+            <li><Link to="/Servies" className="hover:text-[#f8a548]">Servies</Link></li>
           </ul>
         </div>
 
@@ -98,10 +98,10 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-2 text-sm text-black font-semibold">
-            <li><Link to="/web-development" className="hover:text-[#f8a548]">Web Development</Link></li>
-            <li><Link to="/app-development" className="hover:text-[#f8a548]">Mobile App Development</Link></li>
-            <li><Link to="/ui-ux" className="hover:text-[#f8a548]">UI/UX Design</Link></li>
-            <li><Link to="/cloud" className="hover:text-[#f8a548]">Cloud Solutions</Link></li>
+            <li><Link to="/" className="hover:text-[#f8a548]">Web Development</Link></li>
+            <li><Link to="/" className="hover:text-[#f8a548]">Mobile App Development</Link></li>
+            <li><Link to="/" className="hover:text-[#f8a548]">UI/UX Design</Link></li>
+            <li><Link to="/" className="hover:text-[#f8a548]">Cloud Solutions</Link></li>
           </ul>
         </div>
 
@@ -182,8 +182,3 @@ const Footer = () => {
 export default Footer;
 
 
-
-//  { name: "About Us", path: "/aboutSection" },
-//     { name: "Our Team", path: "/globalReach" },
-//     { name: "Portfolio", path: "/connectionSection" },
-//     { name: "Blog", path: "/career" },
